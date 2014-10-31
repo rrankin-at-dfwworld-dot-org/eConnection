@@ -1,0 +1,20 @@
+- var dateFeaturedEvent = dateFormatter(data.featured.events[0].date, 'LLLL')
+- var dateFeaturedEvent2 = dateFormatter(data.featured.events[1].date, 'LLLL')
+- if ( dateFeaturedEvent )
+    p #{ dateFeaturedEvent } in&nbsp;
+      a(href="#{ data.featured.events[0].url }") Dallas
+      br
+      - if(data.featured.events[1].url)
+        | and #{ dateFeaturedEvent2 } in&nbsp;
+        a(href="#{ data.featured.events[1].url }") Fort Worth
+
+- else if (data.featured.title.length > 0)
+    p Join us for&nbsp;
+      a(href="#{ data.featured.events[0].url }", target="_blank") #{ data.featured.title }
+      | ,&nbsp;
+      span.date #{ dateFeaturedEvent } in Dallas
+      - if(data.featured.events.length==2)
+        | &nbsp;and&nbsp;
+      | .
+- else
+    p FAILURE :(

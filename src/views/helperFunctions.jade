@@ -1,0 +1,50 @@
+- var today = new Date();
+- var cityRegEx = /^.*\<br\s\/\>(.*),\sTX.*$/;
+
+- var camelCaseStr = function(str) {
+-   return str
+-     .replace(/\s(.)/g, function($1) { return $1.toUpperCase(); })
+-     .replace(/\s/g, '')
+-     .replace(/^(.)/, function($1) { return $1.toLowerCase(); });
+- }
+
+- function camelize(str) {
+-   return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
+-     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
+-   }).replace(/\s+/g, '');
+- }
+
+- var alphaNumericStr = function(str){
+-   return /^[a-z0-9]+$/i.exec(str);
+- }
+
+- var dateFormatter = function(date, format){
+-   var d = new Date(date);
+-   var _weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+-   var _month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+-   var timeFormatter = function(t){
+-     var _hours = t.getHours();
+-     var _minutes = ((t.getMinutes()<10?'0':'') + t.getMinutes());
+-     if(_hours === 12)
+-       return 'Noon';
+-     else if(_hours > 12)
+-       return (_hours - 12) + ':' + _minutes + ' PM';
+-     else if(_hours < 12)
+-       return _hours + ':' + _minutes + ' AM';
+-   }
+-   if(format==='LLLL')
+-     var dateStr = (_weekday[d.getDay()]) + ', ' + (_month[d.getMonth()]) + ' ' + d.getDate() + ', at ' + timeFormatter(d);
+-   else if(format==='M Y')
+-     var dateStr = (_month[d.getMonth()]) + ' ' + d.getFullYear();
+-   else if(format==='M')
+-     var dateStr = (_month[d.getMonth()]);
+-   else if(format==='Y')
+-     var dateStr = d.getFullYear();
+-   else if(format==='M D')
+-     var dateStr = (d.getMonth() + 1) + '/' + d.getDate()+ ' at ' + timeFormatter(d);
+-   else var dateStr = d;
+-   return dateStr;
+- }
+
+- var permalink = 'https://www.dfwworld.org/media-archive/eConnection/' + dateFormatter(today, 'Y')  + '/' + dateFormatter(today, 'M');
+- var forwardThis = 'mailto: ?subject=FW: World Affairs Council of Dallas Fort Worth - eConection ' + dateFormatter(today, 'M')  + ' ' + dateFormatter(today, 'Y') + '&body=See what The Council has been doing: ' + permalink + '.'

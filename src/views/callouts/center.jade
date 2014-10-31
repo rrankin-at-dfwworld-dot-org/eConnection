@@ -1,0 +1,19 @@
+- var height = story.height ? story.height : 'auto';
+tr.main-content(bgcolor='#E6E7E4')
+  td.full(width='600')
+    a(name='toc_item_#{ count }')
+    .imgContainer
+      - if(story.url)
+        a(href="#{story.url}", target="_blank")
+          img(label='image', src='https://www.dfwworld.org/image/EC_#{ imgURL }.jpg', height='#{ height }', width='600')
+      - else
+        img(label='image', src='https://www.dfwworld.org/image/EC_#{ imgURL }.jpg', height='#{ height }', width='600')
+- if(story.caption)
+  tr.main-content(bgcolor='#222222')
+    td.caption
+      p !{ story.caption }
+tr.main-content(bgcolor='#E6E7E4')
+  td.full(width='600')
+    h2 !{ story.title }
+    - each paragraph in story.body
+      p !{ paragraph }

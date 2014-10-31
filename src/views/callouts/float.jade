@@ -1,0 +1,19 @@
+tr.main-content(bgcolor='#E6E7E4')
+  td(class='float-#{ alignment }', valign='top', align='#{ alignment }', width='600px')
+    a(name='toc_item_#{ count }')
+    h2(align='left') !{ story.title }
+tr.main-content(bgcolor='#E6E7E4')
+  td(class='float-#{ alignment }', valign='top', align='#{ alignment }', width='600px')
+    - if(story.url)
+      table.imageContainer(width='260', height='auto', align='#{ alignment }')
+        tr
+          td(class='float-#{ alignment }', align='#{ alignment }')
+            a(href="#{story.url}", target="_blank")
+              img(label='image', src='https://www.dfwworld.org/image/EC_#{ imgURL }.jpg', height='auto', width='240', align='middle')
+    - else
+      table.imageContainer(width='260', height='auto', align='#{ alignment }')
+        tr
+          td(class='float-#{ alignment }', align='#{ alignment }')
+            img(label='image', src='https://www.dfwworld.org/image/EC_#{ imgURL }.jpg', height='auto', width='240', align='middle')
+    - each paragraph in story.body
+      p !{ paragraph }

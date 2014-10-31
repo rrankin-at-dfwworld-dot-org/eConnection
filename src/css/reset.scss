@@ -1,0 +1,35 @@
+/*////// RESET STYLES //////*/
+h1, h2, h3, h4, h5, h6, p, ul, li, table, tr, td, div, a, img {
+    mso-line-height-rule: exactly;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100% !important;
+    height: auto !important;
+}
+table
+{
+    border-collapse: collapse;
+    td
+    {
+      border-collapse: collapse;
+    }
+}
+img, a img
+{
+    text-decoration: none;
+
+    border: 0;
+    outline: none;
+}
+p
+{
+    margin: 1em;
+}
+.center {
+  margin: inherit auto;
+  text-align: center;
+}

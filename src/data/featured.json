@@ -1,0 +1,38 @@
+{
+  "title": "Political Order and Political Decay: From the Industrial Revolution to the Globalization of Democracy",
+  "speaker": {
+    "name": "Francis Fukuyama",
+    "title": "Olivier Nomellini Senior Fellow, Stanford University’s Freeman Spogli Institute for International Studies"
+  },
+  "img": {
+    "url": "EC_FrancisFukuyama_featured.jpg",
+    "height": "240",
+    "width": "600"
+  },
+  "events": [
+    {
+      "date": [
+        "Thu Oct 16 19:00:00 2014"
+      ],
+      "location": {
+        "text": "Communities Foundation of Texas, 5500 Caruth Haven Ln., Dallas, TX 75225",
+        "url": "https://goo.gl/maps/JMsWa"
+      },
+      "url": "https://www.dfwworld.org/Events?cid=5&ceid=2181&cerid=0&cdt=10%2f16%2f2014"
+    },
+    {
+      "date": [
+        "Fri Oct 17 11:30:00 2014"
+      ],
+      "location": {
+        "text": "The Fort Worth Club, 306 W. 7th St., Fort Worth, TX 76102",
+        "url": "https://goo.gl/maps/c0Uct"
+      },
+      "url": "https://www.dfwworld.org/Events?cid=5&ceid=2182&cerid=0&cdt=10%2f17%2f2014"
+    }
+  ],
+  "body": [
+    "Stanford professor and renowned political scientist Francis Fukuyama has written two books about the history of the modern state. His first, <em>The Origins of Political Order: From Prehuman Times to the French Revolution</em>, was critically acclaimed and leads to his second.",
+    "The just released <em>Political Order and Political Decay: From the Industrial Revolution to the Globalization of Democracy</em> looks at many nations, but, as reviewers have noted, has some positive things to say about the American system."
+  ]
+}
