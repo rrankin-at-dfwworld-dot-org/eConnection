@@ -54,8 +54,8 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                       include toc
       - var count = 0;
       - each story in data.stories
-        - var alphaNumericOnlyStr = story.title.replace(/\&|\,|\!|\'|\"|\./g,'');
-        - var imgURL = camelize(alphaNumericOnlyStr.toLowerCase());
+        - var alphaNumericOnlyStr = story.title.replace(/\&mdash\;|\&|\,|\;|\!|\'|\"|\./g,'');
+        - var imgURL = story.img ? story.img : 'https://www.dfwworld.org/image/EC_' + camelize(alphaNumericOnlyStr.toLowerCase()) + '.jpg';
         - count = count + 1;
         case story.layout
           when "center"

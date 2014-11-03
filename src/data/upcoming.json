@@ -1,44 +1,17 @@
 [
   {
-    "date": "Tuesday, October 14, 2014, 12:00 PM",
-    "img": "SH_BenBlink_120.jpg",
-    "key": 1412264921538,
-    "professional_title": "Senior Policy Analyst, Google",
-    "speaker": "Ben Blink",
-    "title": "Freedom and Power in the Digital Age",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2141&cerid=0&cdt=10%2f14%2f2014"
-  },
-  {
-    "date": "Thursday, October 30, 2014, 6:30 PM",
-    "img": "SH_HE_ShirinTahir-Kheli_120.jpg",
-    "key": 1412264921544,
-    "professional_title": "Senior Advisor to Secretary of State for Women’s Empowerment (2006-2008)",
-    "speaker": "Ambassador Shirin Tahir-Kheli",
-    "title": "Understanding Muslim Societies: Why It Is Critical",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2151&cerid=0&cdt=10%2f30%2f2014"
-  },
-  {
     "date": "Wednesday, November 05, 2014, 1:00 PM",
     "img": "SH_GilHoffman_120.jpg",
-    "key": 1412264921546,
+    "key": 1413569362017,
     "professional_title": "Chief Political Correspondent and Analyst, Jerusalem Post",
     "speaker": "Gil Hoffman",
-    "title": "Peace, Politics, and Plutonium: An Insider’s Look at the Mayhem in the Middle East",
+    "title": "Peace, Politics and Plutonium: An Insider’s Look at the Mayhem in the Middle East",
     "url": "https://www.dfwworld.org/Events?cid=5&ceid=2202&cerid=0&cdt=11%2f5%2f2014"
   },
   {
-    "date": "Monday, November 10, 2014, 5:30 PM",
-    "img": "SH_DouglasBrinkley_120.jpg",
-    "key": 1412264921547,
-    "professional_title": "Professor of History and Fellow, James Baker, III Institute for Public Policy, Rice University",
-    "speaker": "Douglas Brinkley",
-    "title": "The Nixon Tapes",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2215&cerid=0&cdt=11%2f10%2f2014"
-  },
-  {
     "date": "Saturday, November 15, 2014, 11:30 AM",
-    "img": "SH_AConversationwithSenatorTedCruz_120.jpg",
-    "key": 1412264921548,
+    "img": "SH_SenatorTedCruz_120.jpg",
+    "key": 1413569362019,
     "professional_title": "",
     "speaker": "",
     "title": "A Conversation with Senator Ted Cruz",
@@ -47,7 +20,7 @@
   {
     "date": "Monday, November 17, 2014, 6:00 PM",
     "img": "SH_AmbassadorChristopherRobertHill_120.jpg",
-    "key": 1412264921549,
+    "key": 1413569362020,
     "professional_title": "Dean of the Josef Korbel School of International Studies, University of Denver; Former Ambassador to Iraq, Poland, Republic of Macedonia and Special Envoy to Kosovo",
     "speaker": "Ambassador Christopher Robert Hill",
     "title": "Outpost: Life on the Frontlines of American  Diplomacy: A Memoir",
@@ -56,7 +29,7 @@
   {
     "date": "Tuesday, November 18, 2014, 8:00 AM",
     "img": "SH_GlobalForum_120.jpg",
-    "key": 1412264921550,
+    "key": 1413569362021,
     "professional_title": "Outpost: Life on the Frontlines of American Diplomacy: A Memoir",
     "speaker": "",
     "title": "Global Forum: Ambassador Christopher Robert Hill",
@@ -65,16 +38,25 @@
   {
     "date": "Tuesday, November 18, 2014, 12:00 PM",
     "img": "SH_AmbassadorChristopherRobertHill_120.jpg",
-    "key": 1412264921551,
+    "key": 1413569362022,
     "professional_title": "Dean of the Josef Korbel School of International Studies, University of Denver; Former Ambassador to Iraq, Poland, Republic of Macedonia and Special Envoy to Kosovo",
     "speaker": "Ambassador Christopher Robert Hill",
     "title": "Outpost: Life on the Frontlines of American  Diplomacy: A Memoir",
     "url": "https://www.dfwworld.org/Events?cid=5&ceid=2203&cerid=0&cdt=11%2f18%2f2014"
   },
   {
+    "date": "Thursday, November 20, 2014, 6:00 PM",
+    "img": "SH_PastForward_120.jpg",
+    "key": 1413569362023,
+    "professional_title": "Past Forward: Contemporary Art from the Emirates",
+    "speaker": "",
+    "title": "World Affairs Council Member Social and Open House",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2237&cerid=0&cdt=11%2f20%2f2014"
+  },
+  {
     "date": "Thursday, January 22, 2015, 12:00 PM",
     "img": "SH_IPS_120.jpg",
-    "key": 1412264921552,
+    "key": 1413569362024,
     "professional_title": "Stephen A. Cozen Professor of Law & Professor of Political Science; Director, Center for East Asian Studies, University of Pennsylvania Law School",
     "speaker": "IPS",
     "title": "Jacques deLisle on China",

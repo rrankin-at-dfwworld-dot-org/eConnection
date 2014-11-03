@@ -1,9 +1,11 @@
 $font-stack: Helvetica, sans-serif;
 $dark-blue: #083A81;
 $light-blue: #BBE4FF;
-$council-white: #f0f0f0;
+$caption-link: #147A9B;
+$council-white: #F0F0F0;
 $council-red: #A00008;
 $table-bg: #E6E7E4;
+
 
 body{
   background-color: #FEFEFE;
@@ -49,6 +51,9 @@ a {
         font-size: 13px;
         line-height: 150%;
         margin: 8px;
+        a{
+          color: $caption-link;
+        }
       }
     }
 
@@ -243,7 +248,7 @@ td#table-of-contents{
       table.imageContainer{
         float: left;
         img{
-          margin-top: 20px;
+          margin-top: 10px;
         }
       }
     }
