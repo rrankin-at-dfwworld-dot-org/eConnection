@@ -1,6 +1,6 @@
 tr.main-content(bgcolor='#E6E7E4')
-  td.left(valign='top', width='240')
-    table
+  td.left(valign='top', width='600', align='left')
+    table(style='float: left; margin: 0 15px 5px 0', width="240", align='left')
       tbody
         tr
           td.imageContainer
@@ -9,11 +9,8 @@ tr.main-content(bgcolor='#E6E7E4')
                 img(label='image', src='#{ imgURL }', height='auto', width='240', align='left')
             - else
               img(label='image', src='#{ imgURL }', height='auto', width='240', align='left')
-        tr
-          td.caption(align='left')
-            - if(story.caption)
-              p !{ story.caption }
-  td.left(valign='top', width='360')
+        - if(story.caption)
+          include photo-caption
     a(name='toc_item_#{ count }')
     h2 !{ story.title }
     - each paragraph in story.body

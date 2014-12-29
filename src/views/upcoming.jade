@@ -1,13 +1,22 @@
 - var totalUpcomingEvents = data.upcoming.length | 0;
 tr.main-container(style='height: 300px; margin: 0; padding: 0;')
   - for(var i=0;i<3;i++)
+    - var url = (data.upcoming[i].url[0].length > 1) ? data.upcoming[i].url[0] : data.upcoming[i].url;
     td(valign='top', align='center', width='180', height='180', bgcolor='#f8f8f8', style='margin: auto; padding: 2px; text-align: center;')
-      a(href='#{ data.upcoming[i].url }', target='_blank')
+      a(href='#{ url }', target='_blank')
         img(alt='#{ data.upcoming[i].speaker || data.upcoming[i].title }', src='https://www.dfwworld.org/image/#{ data.upcoming[i].img }', align='center', border='0', height='120', width='120')
       div(style='margin: 0; padding: 0;')
         p(align='center')
-          span #{ dateFormatter(data.upcoming[i].date, 'M D') }
-        h2(align='center') #{ data.upcoming[i].speaker }
+          - if (data.upcoming[i].date[0].length > 1)
+            span #{ dateFormatter(data.upcoming[i].date[0], 'M D') } in&nbsp;
+              a(href='#{ url }', target='_blank') McKinney
+              br
+              | #{ dateFormatter(data.upcoming[i].date[1], 'M D') } in&nbsp;
+              a(href='#{ data.upcoming[i].url[1] }', target='_blank') Dallas
+          - else
+            span #{ dateFormatter(data.upcoming[i].date, 'M D') }
+        - if (data.upcoming[i].speaker)
+          h2(align='center') !{ data.upcoming[i].speaker }
         h3(align='center')
-          a(href='#{ data.upcoming[i].url }', target='_blank') !{ data.upcoming[i].title }
+          a(href='#{ url }', target='_blank') !{ data.upcoming[i].title }
         br

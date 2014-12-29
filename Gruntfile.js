@@ -13,9 +13,9 @@ module.exports = function(grunt) {
                     dest: "tmp/css"
                 }, {
                     expand: true,
-                    cwd: "src/images",
+                    cwd: "src/image",
                     src: ["**"],
-                    dest: "tmp/images"
+                    dest: "tmp/image"
                 }, {
                     expand: true,
                     cwd: "src",
@@ -89,9 +89,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: "tmp/images",
+                    cwd: "tmp/image",
                     src: ["**/*.{png,jpg,jpeg}"],
-                    dest: "dist/images"
+                    dest: "dist/image"
                 }]
             }
         },
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask("start", "Compiles the development environment", [
+    grunt.registerTask("start", "Compiles the development environment and serves to browser", [
         "build:development",
         "connect:dev",
         "watch:src"

@@ -1,0 +1,26 @@
+- var dateFeaturedEvent = dateFormatter(data.featured.events[0].date, 'LLLL')
+- var dateFeaturedEvent2 = data.featured.events[1] ? dateFormatter(data.featured.events[1].date, 'LLLL') : false;
+- var city = data.featured.events[0].location.text.split(',')[2];
+- var venue = data.featured.events[0].location.text.split(',')[0];
+- if ( dateFeaturedEvent && data.featured.speaker.name.length === 0 )
+    p #{ dateFeaturedEvent } in&nbsp;
+      a(href="#{ data.featured.events[0].url }") Dallas
+      br
+      - if(dateFeaturedEvent2)
+        | and #{ dateFeaturedEvent2 } in&nbsp;
+        a(href="#{ data.featured.events[1].url }") Fort Worth
+
+- else if (data.featured.speaker.name.length > 0 && (data.featured.events[0].location.text === false))
+    p Join us for&nbsp;
+      a(href="#{ data.featured.events[0].url }", target="_blank") #{ data.featured.speaker.name }
+      | ,&nbsp;
+      span.date #{ dateFeaturedEvent } in Dallas
+      - if(data.featured.events.length==2)
+        | &nbsp;and&nbsp;
+      | .
+- else if(data.featured.events[0].location.text && dateFeaturedEvent)
+    p Join us&nbsp;
+      a(href="#{ data.featured.events[0].url }", target="_blank") !{ dateFeaturedEvent }
+      | &nbsp;at the !{ venue } in !{ city }.
+- else
+    p FAILURE in photo-caption.jade :(

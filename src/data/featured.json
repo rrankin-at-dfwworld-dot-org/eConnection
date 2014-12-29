@@ -1,29 +1,27 @@
 {
-  "title": "A Special Senatorial Event Just for Council Members",
+  "title": "Embers of War: The Fall of an Empire and the Making of America’s Vietnam",
   "speaker": {
-    "name": "United States Senator Ted Cruz",
-    "title": "United States Senator"
+    "name": "Fredrik Logevall",
+    "title": "Vice Provost for International Affairs, Cornell University Department of History"
   },
   "img": {
-    "url": "EC_TedCruz_featured.jpg",
+    "url": "SH_FredrikLogevall.jpg",
     "height": "auto",
     "width": "600"
   },
   "events": [
     {
       "date": [
-        "Sat Nov 15 11:30:00 2014"
+        "Tuesday, January 20, 2015, 7:30 PM"
       ],
       "location": {
-        "text": "Rosewood Crescent Hotel, 400 Crescent Ct., Dallas, TX 75201",
-        "url": "https://goo.gl/maps/XM9XJ"
+        "text": "Dallas Museum of Art,  1717 N Harwood St,  Dallas, TX 75201",
+        "url": "https://goo.gl/maps/9YuFx"
       },
-      "url": "https://www.dfwworld.org/Events?cid=5&ceid=2181&cerid=0&cdt=10%2f16%2f2014"
+      "url": "https://www.dfwworld.org/Events?cid=5&ceid=2258&cerid=0&cdt=1%2f20%2f2015"
     }
   ],
   "body": [
-    "As the echoes of the 2014 mid-term election campaign fade, Council members have a unique opportunity to hear what all the shouting was about from a man who is keenly interested in the affairs of the nation, U.S. Senator Ted Cruz (R-Texas).",
-    "The Council presents <a href='https://www.dfwworld.org/Events?cid=5&ceid=2218&cerid=0&cdt=11%2f15%2f2014' target='_blank'>\"A Conversation With Senator Ted Cruz\" on Saturday, November 15, at the Rosewood Crescent Hotel</a>.",
-    "The highlight of this special luncheon program will be a discussion of timely national and international topics with the senator. Reserve your place at this extraordinary event!"
+    "Fredrik Logevall is a renowned scholar and Cornell University professor who won the Pulitzer Prize for History with his most recent book, <em>Embers of War: The Fall of An Empire and the Making of America's Vietnam</em>. In a work described as \"written with the style of a great novelist and the intrigue of a Cold War thriller,\" Logevall provides an understanding of America's entrance into a war in Vietnam in the aftermath of France's defeat and departure. The book demonstrates that war is not without post-conflict consequences."
   ]
 }
