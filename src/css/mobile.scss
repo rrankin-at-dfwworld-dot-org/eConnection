@@ -21,12 +21,25 @@
     font-size: 18px !important; line-height: 24px !important;
   }
   .main-content{
+    td.caption{
+      p, a{
+        font-size: 18px !important;
+        span{
+          display: block !important;
+        }
+      }
+    }
     .left, .right{
       td.imageContainer{
         img{
-          width: 100%;
+          width: 100% !important;
         }
       }
+    }
+  }
+  #upcoming{
+    .date, .date a{
+      font-size: 16px !important;
     }
   }
   #header-content{

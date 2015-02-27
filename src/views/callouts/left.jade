@@ -1,6 +1,6 @@
 tr.main-content(bgcolor='#E6E7E4')
   td.left(valign='top', width='600', align='left')
-    table(style='float: left; margin: 0 15px 5px 0', width="240", align='left')
+    table(style='float: left; margin: 0 15px 15px 0', width="240", align='left')
       tbody
         tr
           td.imageContainer
@@ -13,5 +13,4 @@ tr.main-content(bgcolor='#E6E7E4')
           include photo-caption
     a(name='toc_item_#{ count }')
     h2 !{ story.title }
-    - each paragraph in story.body
-      p !{ paragraph }
+    include textBody

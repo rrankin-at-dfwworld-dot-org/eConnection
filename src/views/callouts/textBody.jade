@@ -1,0 +1,23 @@
+p
+  - each paragraph in story.body
+    - var type = typeof paragraph;
+    case type
+      when 'string'
+        !{ paragraph }
+        br
+        br
+      when 'object'
+        - if(paragraph.quote)
+          br
+          table.quote
+            tr
+              td.quotation-mark(valign='top')
+                | &ldquo;
+              td
+                table.text
+                  tr
+                    td.text
+                      p !{ paragraph.quote }&rdquo;
+                  tr
+                    td.cite
+                      p &mdash; !{ paragraph.cite }

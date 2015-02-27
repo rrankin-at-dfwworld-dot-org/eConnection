@@ -15,5 +15,4 @@ tr.main-content(bgcolor='#E6E7E4')
         tr
           td(class='float-#{ alignment }', align='#{ alignment }')
             img(label='image', src='#{ imgURL }', height='auto', width='240', align='middle')
-    - each paragraph in story.body
-      p !{ paragraph }
+    include textBody

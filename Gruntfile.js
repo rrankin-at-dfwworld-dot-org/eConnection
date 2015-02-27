@@ -90,7 +90,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: "tmp/image",
-                    src: ["**/*.{png,jpg,jpeg}"],
+                    src: ["**/*.{png,jpg,jpeg,gif}"],
                     dest: "dist/image"
                 }]
             }
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
         "sass:compile",
         "uncss:dist",
         "htmlmin:dist",
-        "premailer:dist",
+        //"premailer:dist",
         "imagemin:dist",
         "copy:tmp"
     ]);
@@ -167,7 +167,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-htmlmin");
     grunt.loadNpmTasks("grunt-premailer");
 
-    grunt.loadNpmTasks("grunt-sass");
+    grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks('grunt-jade');
 
 

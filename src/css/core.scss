@@ -41,6 +41,18 @@ a {
   width: 600px;
   height: auto;
   .main-content{
+    td{
+      p{
+        a.button{
+         text-align: center;
+         padding: 10px 8px;
+         background-color: #f8f8f8;
+         border: 3px solid #E0E0E0;
+         border-top: 2px solid #D0D0D0;
+         border-bottom: 5px solid #d8d8d8;
+        }
+      }
+    }
     td.caption{
       background-color: #222222;
       vertical-align: middle;
@@ -48,16 +60,18 @@ a {
       p{
         color: #FFFFFF;
         text-align: center;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 150%;
         margin: 8px;
         a{
           color: $caption-link;
           border-bottom: 1px solid $caption-link;
         }
+        span.block{
+          display: block;
+        }
       }
     }
-
   }
 }
 #header-content {
@@ -181,14 +195,31 @@ td#table-of-contents{
       line-height: 200%;
       font-size: 200%;
     }
-    .quote{
+    table.quote{
       background-color: $council-white;
       margin-left: 10px;
       width:580px;
       border-left: 3px solid #AAAAAA;
-      .quotation-mark{
-        line-height: 100%;
-        font-size: 300%;
+      td{
+        padding: 1px !important;
+        margin:0;
+      }
+      td.quotation-mark{
+        line-height: 30px;
+        font-size: 60px;
+        padding: 20px 5px 0px 5px !important;
+      }
+      table.text{
+        width: 540px;
+        td.text p{
+          font-style: italic;
+          font-size: 110%;
+        }
+        td.cite{
+          float: right;
+          font-weight: bold;
+          padding: 0px 5px 5px !important;
+        }
       }
     }
 
@@ -233,7 +264,7 @@ td#table-of-contents{
       }
     }
     .float-left, .float-right{
-      table.imageContainer{
+      td.imageContainer{
         display: inline-block;
         width:260px;
         height: auto;

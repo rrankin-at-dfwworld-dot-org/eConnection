@@ -1,0 +1,6 @@
+- var height = story.height ? story.height : 'auto';
+tr.main-content(bgcolor='#E6E7E4')
+  td.full(width='600')
+    h2 !{ story.title }
+    - each paragraph in story.body
+      p !{ paragraph }

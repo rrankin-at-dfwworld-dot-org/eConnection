@@ -20,7 +20,11 @@
       | .
 - else if(data.featured.events[0].location.text && dateFeaturedEvent)
     p Join us&nbsp;
-      a(href="#{ data.featured.events[0].url }", target="_blank") !{ dateFeaturedEvent }
-      | &nbsp;at the !{ venue } in !{ city }.
+      a(href="#{ data.featured.events[0].url }", target="_blank") 
+        | !{ dateFeaturedEvent }
+      span &nbsp;at the !{ venue }
+        - if(venue.indexOf(city) === -1)
+          | &nbsp;in !{ city }
+        |.
 - else
     p FAILURE in photo-caption.jade :(

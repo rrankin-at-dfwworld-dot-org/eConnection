@@ -1,6 +1,9 @@
 - var height = story.height ? story.height : 'auto';
 tr.main-content(bgcolor='#E6E7E4')
   td.full(width='600')
+    - if(story.textBeforeImage === true)
+      h2 !{ story.title }
+      include textBody
     a(name='toc_item_#{ count }')
     .imgContainer
       - if(story.url)
@@ -14,6 +17,6 @@ tr.main-content(bgcolor='#E6E7E4')
       p !{ story.caption }
 tr.main-content(bgcolor='#E6E7E4')
   td.full(width='600')
-    h2 !{ story.title }
-    - each paragraph in story.body
-      p !{ paragraph }
+    - if(!story.textBeforeImage || story.textBeforeImage === false)
+      h2 !{ story.title }
+      include textBody

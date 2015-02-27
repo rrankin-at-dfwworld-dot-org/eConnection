@@ -1,119 +1,29 @@
 [
   {
-    "date": "Wednesday, January 14, 2015, 6:30 PM",
-    "img": "SH_MichaelMandelbaum_120.jpg",
-    "key": 1419373828119,
-    "professional_title": "Christian Herter Professor, Paul H. Nitze School of Advanced International Studies, The Johns Hopkins University",
-    "speaker": "Special Contributors’ Circle Program",
-    "title": "Michael Mandelbaum - The Road to Global Prosperity",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2267&cerid=0&cdt=1%2f14%2f2015"
-  },
-  {
-    "date": "Tuesday, January 20, 2015, 7:30 PM",
-    "img": "SH_FredrikLogevall_120.jpg",
-    "key": 1419373828120,
-    "professional_title": "Vice Provost for International Affairs, Cornell University Department of History",
-    "speaker": "Fredrik Logevall",
-    "title": "Embers of War: The Fall of an Empire and the Making of America’s Vietnam",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2258&cerid=0&cdt=1%2f20%2f2015"
-  },
-  {
-    "date": "Thursday, January 22, 2015, 12:00 PM",
-    "img": "SH_JacquesDeLisleOnChina_120.jpg",
-    "key": 1419373828121,
-    "professional_title": "Stephen A. Cozen Professor of Law & Professor of Political Science; Director, Center for East Asian Studies, University of Pennsylvania Law School",
-    "speaker": "International Perspectives Series",
-    "title": "Jacques deLisle - China's Traditional Inscrutability: A Surprising Look Behind It",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2183&cerid=0&cdt=1%2f22%2f2015"
-  },
-  {
-    "date": "Wednesday, February 18, 2015, 8:30 AM",
-    "img": "SH_AubreyFox_120.jpg",
-    "key": 1419373828122,
-    "professional_title": "Executive Director, United States Office of the Institute for Economics and Peace",
-    "speaker": "Aubrey Fox",
-    "title": "The Global Terrorism Index",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2265&cerid=0&cdt=2%2f18%2f2015"
-  },
-  {
-    "date": "Friday, February 20, 2015, 7:00 PM",
-    "img": "SH_DallasMuseumofArtFreshInkLecture_120.jpg",
-    "key": 1419373828123,
-    "professional_title": "American Photojournalist",
-    "speaker": "Dallas Museum of Art Fresh Ink Lecture",
-    "title": "Lynsey Addario - Behind the Lens and Enemy Lines",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2269&cerid=0&cdt=2%2f20%2f2015"
-  },
-  {
-    "date": "Tuesday, February 24, 2015, 6:30 PM",
-    "img": "SH_RobertGrenier_120.jpg",
-    "key": 1419373828124,
-    "professional_title": "Chairman, ERG Partners; 27-Year Veteran, Central Intelligence Agency",
-    "speaker": "Robert Grenier",
-    "title": "88 Days to Kandahar",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2264&cerid=0&cdt=2%2f24%2f2015"
-  },
-  {
-    "date": "Friday, February 27, 2015, 3:00 PM",
-    "img": "SH_ElliotAckermanwithBenFountain_120.jpg",
-    "key": 1419373828125,
-    "professional_title": "Decorated Veteran of the Iraq and Afghanistan wars and a Former White House Fellow",
-    "speaker": "Elliot Ackerman with Ben Fountain",
-    "title": "Heroism and Heartbreak",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2259&cerid=0&cdt=2%2f27%2f2015"
-  },
-  {
     "date": "Wednesday, March 11, 2015, 11:30 AM",
-    "img": "SH_ZlaticaKraljevic_120.jpg",
-    "key": 1419373828126,
+    "img": "BC_BorderlessLeadership.jpg",
+    "key": 1422638595391,
     "professional_title": "President, The Anders Frontier Group LLC",
     "speaker": "Zlatica Kraljevic",
     "title": "Borderless Leadership: Global Skills for Personal Success - FORT WORTH",
     "url": "https://www.dfwworld.org/Events?cid=5&ceid=2263&cerid=0&cdt=3%2f11%2f2015"
   },
   {
-    "date": "Tuesday, March 17, 2015, 6:30 PM",
-    "img": "SH_GeorgeFriedman_120.jpg",
-    "key": 1419373828127,
-    "professional_title": "Chairman and Founder, Stratfor",
-    "speaker": "George Friedman",
-    "title": "Flash Points: The Emerging Crisis in Europe",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2268&cerid=0&cdt=3%2f17%2f2015"
-  },
-  {
     "date": "Friday, March 20, 2015, 12:00 PM",
-    "img": "SH_InternationalPerspectivesSeries_120.jpg",
-    "key": 1419373828128,
+    "img": "SH_ElizabethCobbsHoffman_120.jpg",
+    "key": 1422638595393,
     "professional_title": "Dwight E. Stanford Professor of American Foreign Relations, San Diego State University",
     "speaker": "International Perspectives Series",
-    "title": "Elizabeth Cobbs Hoffman - The Next 40 Years of U.S. Foreign Policy",
+    "title": "Elizabeth Hoffman - The Next 40 Years of U.S. Foreign Policy",
     "url": "https://www.dfwworld.org/Events?cid=5&ceid=2185&cerid=0&cdt=3%2f20%2f2015"
   },
   {
     "date": "Saturday, March 28, 2015, 8:45 AM",
-    "img": "SH_TheInternationalConferenceonEducationasaHumanRight_120.jpg",
-    "key": 1419373828129,
+    "img": "TheInternationalConferenceonEducationasaHumanRight_120.jpg",
+    "key": 1422638595394,
     "professional_title": "Open to the general public",
     "speaker": false,
     "title": "The International Conference on Education as a Human Right",
     "url": "https://www.dfwworld.org/Events?cid=5&ceid=2256&cerid=0&cdt=3%2f28%2f2015"
-  },
-  {
-    "date": "Wednesday, April 08, 2015, 7:00 PM",
-    "img": "SH_GeoffDyer_120.jpg",
-    "key": 1419373828130,
-    "professional_title": "Author, Paris Trance, The Search, The Colour of Memory, and Jeff in Venice, Death in Varanasi",
-    "speaker": "Geoff Dyer",
-    "title": "Another Great Day at Sea",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2270&cerid=0&cdt=4%2f8%2f2015"
-  },
-  {
-    "date": "Tuesday, April 21, 2015, 12:00 PM",
-    "img": "SH_InternationalPerspectivesSeries_120.jpg",
-    "key": 1419373828131,
-    "professional_title": "Director, Center on the United States and Europe and Senior Fellow in the Foreign Policy Program, Brookings Institution",
-    "speaker": "International Perspectives Series",
-    "title": "Fiona Hill on Russia",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2186&cerid=0&cdt=4%2f21%2f2015"
   }
 ]
