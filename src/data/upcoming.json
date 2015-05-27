@@ -1,29 +1,32 @@
 [
   {
-    "date": "Wednesday, March 11, 2015, 11:30 AM",
-    "img": "BC_BorderlessLeadership.jpg",
-    "key": 1422638595391,
-    "professional_title": "President, The Anders Frontier Group LLC",
-    "speaker": "Zlatica Kraljevic",
-    "title": "Borderless Leadership: Global Skills for Personal Success - FORT WORTH",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2263&cerid=0&cdt=3%2f11%2f2015"
+    "date": "Wednesday, April 08, 2015, 7:00 PM",
+    "img": "BC_AnothergreatDayAtSea.jpg",
+    "key": 1427728437819,
+    "professional_title": "Author, Paris Trance, The Search, The Colour of Memory, and Jeff in Venice, Death in Varanasi",
+    "speaker": "Geoff Dyer",
+    "title": "Another Great Day at Sea",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2270&cerid=0&cdt=4%2f8%2f2015"
   },
   {
-    "date": "Friday, March 20, 2015, 12:00 PM",
-    "img": "SH_ElizabethCobbsHoffman_120.jpg",
-    "key": 1422638595393,
-    "professional_title": "Dwight E. Stanford Professor of American Foreign Relations, San Diego State University",
-    "speaker": "International Perspectives Series",
-    "title": "Elizabeth Hoffman - The Next 40 Years of U.S. Foreign Policy",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2185&cerid=0&cdt=3%2f20%2f2015"
+    "date": [
+      "Saturday, April 11, 2015, 8:15 PM",
+      "Sunday, April 12, 2015, 12:45 PM"
+    ],
+    "img": "DIFF2015CartelLand_120.jpg",
+    "key": 1427728437820,
+    "professional_title": "Dallas International Film Festival",
+    "speaker": "Film Screening",
+    "title": "Cartel Land",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2342&cerid=0&cdt=4%2f11%2f2015"
   },
   {
-    "date": "Saturday, March 28, 2015, 8:45 AM",
-    "img": "TheInternationalConferenceonEducationasaHumanRight_120.jpg",
-    "key": 1422638595394,
-    "professional_title": "Open to the general public",
-    "speaker": false,
-    "title": "The International Conference on Education as a Human Right",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2256&cerid=0&cdt=3%2f28%2f2015"
+    "date": "Thursday, April 16, 2015, 12:15 PM",
+    "img": "BC_DavidAndGoliath.jpg",
+    "key": 1427728437823,
+    "professional_title": "Author of five New York Times bestsellers",
+    "speaker": "International Educator of the Year Award Luncheon",
+    "title": "Keynote Malcolm Gladwell",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2280&cerid=0&cdt=4%2f16%2f2015"
   }
 ]

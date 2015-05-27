@@ -1,5 +1,8 @@
 node_modules
 tmp
 npm-debug.log
+.sass-cache
 dist/*
 *.psd
+*.jpg
+*.gif

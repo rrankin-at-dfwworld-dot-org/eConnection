@@ -11,7 +11,7 @@ tr.main-content(bgcolor='#E6E7E4')
           img(label='image', src='#{ imgURL }', height='#{ height }', width='600')
       - else
         img(label='image', src='#{ imgURL }', height='#{ height }', width='600')
-- if(story.caption)
+- if(story.caption && story.caption.length>0)
   tr.main-content(bgcolor='#222222')
     td.caption
       p !{ story.caption }

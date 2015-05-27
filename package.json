@@ -14,5 +14,8 @@
     "grunt-nodemon": "^0.3.0",
     "grunt-premailer": "0.2.4",
     "grunt-uncss": "0.2.0"
+  },
+  "scripts":{
+    "start":"grunt start"
   }
 }

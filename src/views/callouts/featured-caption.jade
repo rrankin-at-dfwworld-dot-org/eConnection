@@ -1,14 +1,13 @@
 - var dateFeaturedEvent = dateFormatter(data.featured.events[0].date, 'LLLL')
-- var dateFeaturedEvent2 = data.featured.events[1] ? dateFormatter(data.featured.events[1].date, 'LLLL') : false;
+- var dateFeaturedEvent2 = data.featured.events[1] ? dateFormatter(data.featured.events[1].date, 'T') : false;
 - var city = data.featured.events[0].location.text.split(',')[2];
 - var venue = data.featured.events[0].location.text.split(',')[0];
-- if ( dateFeaturedEvent && data.featured.speaker.name.length === 0 )
+- if ( dateFeaturedEvent && dateFeaturedEvent2 )
     p #{ dateFeaturedEvent } in&nbsp;
-      a(href="#{ data.featured.events[0].url }") Dallas
-      br
-      - if(dateFeaturedEvent2)
-        | and #{ dateFeaturedEvent2 } in&nbsp;
-        a(href="#{ data.featured.events[1].url }") Fort Worth
+      a(href="#{ data.featured.events[0].url }") Fort Worth
+      | &nbsp;and #{ dateFeaturedEvent2 } in&nbsp;
+      a(href="#{ data.featured.events[1].url }") Dallas
+      |.
 
 - else if (data.featured.speaker.name.length > 0 && (data.featured.events[0].location.text === false))
     p Join us for&nbsp;
@@ -16,7 +15,8 @@
       | ,&nbsp;
       span.date #{ dateFeaturedEvent } in Dallas
       - if(data.featured.events.length==2)
-        | &nbsp;and&nbsp;
+        | &nbsp;and&nbsp;#{ dateFeaturedEvent2 } in&nbsp;
+        a(href="#{ data.featured.events[1].url }") Fort Worth
       | .
 - else if(data.featured.events[0].location.text && dateFeaturedEvent)
     p Join us&nbsp;

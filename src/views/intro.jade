@@ -1,8 +1,10 @@
 h2 !{ data.featured.title }
 - if (data.featured.body && data.featured.body.length>0)
+p
   - each item in data.featured.body
     - if (typeof item === 'string')
-      p !{ item }
+      | !{ item }
+      br
+      br
     - else if (typeof item === 'object')
-      p
-        strong UNFULFILLED CASE IN FEATUREED.JSON @ SRC/VIEWS/INTRO.JADE
+      strong UNFULFILLED CASE IN FEATUREED.JSON @ SRC/VIEWS/INTRO.JADE

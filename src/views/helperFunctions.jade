@@ -42,10 +42,14 @@
 -     var dateStr = d.getFullYear();
 -   else if(format==='M D')
 -     var dateStr = (d.getMonth() + 1) + '/' + d.getDate()+ ' at ' + timeFormatter(d);
+-   else if(format==='T')
+-     var dateStr =  timeFormatter(d);
 -   else var dateStr = d;
 -   return dateStr;
 - }
 
+- var message = 'Join the conversation! See what the Council has been doing => '
 - var permalink = 'https://www.dfwworld.org/media-archive/eConnection/' + dateFormatter(today, 'Y')  + '/' + dateFormatter(today, 'M');
-- var forwardThis = 'mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection ' + dateFormatter(today, 'M')  + ' ' + dateFormatter(today, 'Y') + '&body=Join the conversation! See what The Council has been doing => ' + permalink + '.'
+- var tweet = 'http://twitter.com/intent/tweet?url=' + permalink + '&text=' + message + '&via=dfwworld&related=dfwworld'
+- var forwardThis = 'mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection ' + dateFormatter(today, 'M')  + ' ' + dateFormatter(today, 'Y') + '&body=' + message + permalink + '.'
 - var baseURL = (data.debug === false) ? 'https://www.dfwworld.org/' : '/'

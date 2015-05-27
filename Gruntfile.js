@@ -153,7 +153,7 @@ module.exports = function(grunt) {
         "sass:compile",
         "uncss:dist",
         "htmlmin:dist",
-        //"premailer:dist",
+        "premailer:dist",
         "imagemin:dist",
         "copy:tmp"
     ]);
