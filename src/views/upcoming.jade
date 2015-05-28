@@ -13,10 +13,10 @@ tr.main-container.upcoming(style='height: 300px; margin: 0; padding: 0;')
         p(align='center')
           - if (data.upcoming[i].date[0].length > 1)
             span.date #{ dateFormatter(data.upcoming[i].date[0], 'M D') } in&nbsp;
-              a(href='#{ url }', target='_blank') Dallas
+              a(href='#{ url }', target='_blank') Fort Worth
               br
               | #{ dateFormatter(data.upcoming[i].date[1], 'M D') } in&nbsp;
-              a(href='#{ data.upcoming[i].url[1] }', target='_blank') Dallas
+              a(href='#{ data.upcoming[i].url[1] }', target='_blank') Addison
           - else
             span.date #{ dateFormatter(data.upcoming[i].date, 'M D') }
         - if (data.upcoming[i].speaker)

@@ -1,32 +1,32 @@
 [
   {
-    "date": "Wednesday, April 08, 2015, 7:00 PM",
-    "img": "BC_AnothergreatDayAtSea.jpg",
-    "key": 1427728437819,
-    "professional_title": "Author, Paris Trance, The Search, The Colour of Memory, and Jeff in Venice, Death in Varanasi",
-    "speaker": "Geoff Dyer",
-    "title": "Another Great Day at Sea",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2270&cerid=0&cdt=4%2f8%2f2015"
+    "date": "Tuesday, June 02, 2015, 12:00 PM",
+    "img": "BC_ByThePeople.jpg",
+    "key": 1432765748891,
+    "professional_title": "W. H. Brady Scholar, American Enterprise Institute",
+    "speaker": "Charles Murray",
+    "title": "By The People: Rebuilding Liberty Without Permission",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2352&cerid=0&cdt=6%2f2%2f2015"
+  },
+  {
+    "date": "Wednesday, June 10, 2015, 12:00 PM",
+    "img": "BC_FionaHillMrPutin.jpg",
+    "key": 1432765748892,
+    "professional_title": "Director, Center on the United States and Europe and Senior Fellow in the Foreign Policy Program, Brookings Institution",
+    "speaker": "International Perspectives Series",
+    "title": "Fiona Hill - How Should We Deal With Putin’s Russia?",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2354&cerid=0&cdt=6%2f10%2f2015"
   },
   {
     "date": [
-      "Saturday, April 11, 2015, 8:15 PM",
-      "Sunday, April 12, 2015, 12:45 PM"
+      "Tuesday, June 23, 2015, 11:30 AM",
+      "Tuesday, June 23, 2015, 6:30 PM"
     ],
-    "img": "DIFF2015CartelLand_120.jpg",
-    "key": 1427728437820,
-    "professional_title": "Dallas International Film Festival",
-    "speaker": "Film Screening",
-    "title": "Cartel Land",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2342&cerid=0&cdt=4%2f11%2f2015"
-  },
-  {
-    "date": "Thursday, April 16, 2015, 12:15 PM",
-    "img": "BC_DavidAndGoliath.jpg",
-    "key": 1427728437823,
-    "professional_title": "Author of five New York Times bestsellers",
-    "speaker": "International Educator of the Year Award Luncheon",
-    "title": "Keynote Malcolm Gladwell",
-    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2280&cerid=0&cdt=4%2f16%2f2015"
+    "img": "BC_ReaganTheLife.jpg",
+    "key": 1432765748895,
+    "professional_title": "Professor, Department of History, The University of Texas at Austin",
+    "speaker": "H.W. Brands",
+    "title": "Reagan: The Life",
+    "url": "https://www.dfwworld.org/Events?cid=5&ceid=2286&cerid=0&cdt=6%2f23%2f2015"
   }
 ]
