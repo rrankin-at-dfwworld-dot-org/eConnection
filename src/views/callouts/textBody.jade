@@ -3,9 +3,7 @@ p
     - var type = typeof paragraph;
     case type
       when 'string'
-        !{ paragraph }
-        br
-        br
+        p !{ paragraph }
       when 'object'
         - if(paragraph.quote)
           br

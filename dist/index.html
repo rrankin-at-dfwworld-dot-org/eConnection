@@ -1,46 +1,472 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
-    <title>eConnection 3.0</title>
-    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
-    <link href="css/core.css" rel="stylesheet" type="text/css"/>
-    <link href="css/mobile.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
   </head>
-  <body topmargin="0" leftmargin="0" bgcolor="#FFFFFF" marginheight="0" marginwidth="0">
-    <div id="bg"><!--[if mso]> <style type='text/css'>p,span,div,h1,h2,h3,table,tr,td{ mso-line-height-rule: exactly; }</style> <![endif]-->
-      <table id="header-content" align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+  <body topmargin="0" leftmargin="0" bgcolor="#FFFFFF" marginheight="0" marginwidth="0" style="background: #FEFEFE; color: #444444; font-family: Helvetica, sans-serif; font-size: 13px; height: auto !important; width: 100% !important"><style type="text/css">
+img {
+mso-line-height-rule: exactly; line-height: 150%; margin: 0; padding: 0;
+}
+body {
+width: 100% !important; height: auto !important;
+}
+img {
+text-decoration: none; border: 0; outline: none;
+}
+body {
+background-color: #FEFEFE; font-family: Helvetica, sans-serif; font-size: 13px; color: #444444;
+}
+img {
+mso-line-height-rule: exactly; line-height: 150%; margin: 0; padding: 0;
+}
+body {
+width: 100% !important; height: auto !important;
+}
+img {
+text-decoration: none; border: 0; outline: none;
+}
+body {
+background-color: #FEFEFE; font-family: Helvetica, sans-serif; font-size: 13px; color: #444444;
+}
+/*** uncss> filename: tmp/css/reset.css ***/
+
+/*////// RESET STYLES //////*/
+
+h2,
+h3,
+p,
+table,
+tr,
+td,
+div,
+a,
+img {
+  mso-line-height-rule: exactly;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  height: auto !important;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  border-collapse: collapse;
+}
+
+img,
+a img {
+  text-decoration: none;
+  border: 0;
+  outline: none;
+}
+
+p {
+  margin: 1em;
+}
+
+.center {
+  margin: inherit auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=reset.css.map */
+
+/*** uncss> filename: tmp/css/core.css ***/
+
+body {
+  background-color: #FEFEFE;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  color: #444444;
+}
+
+#bg {
+  width: 100%;
+  -webkit-box-shadow: inset 0px -10px 600px 10px rgba(50, 50, 50, 0.03);
+  -moz-box-shadow: inset 0px -10px 600px 10px rgba(50, 50, 50, 0.03);
+  box-shadow: inset 0px -10px 600px 10px rgba(50, 50, 50, 0.03);
+}
+
+h2 {
+  font-size: 21px;
+  line-height: 34px;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  color: #333333;
+  line-height: 21px;
+}
+
+a {
+  color: #083A81;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container-table {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  height: auto;
+}
+
+.container-table .main-content td.caption {
+  background-color: #222222;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.container-table .main-content td.caption p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  line-height: 21px;
+  margin: 8px;
+}
+
+.container-table .main-content td.caption p a {
+  color: #E7F1FD;
+  border-bottom: 1px solid #E7F1FD;
+}
+
+#header-content {
+  font-weight: bold;
+  color: #083A81;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+#header-content #billboard {
+  background-color: #F0F0F0;
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+#header-content #weblinks {
+  background-color: #083A81;
+}
+
+#header-content #weblinks table {
+  height: 25px;
+  margin: auto;
+}
+
+#header-content #weblinks table td {
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+#header-content #weblinks table td a {
+  height: 25px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #F0F0F0;
+}
+
+#header-content .social {
+  height: 40px;
+}
+
+#header-content .social .social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+#header-content .social #date {
+  color: #A00008;
+}
+
+.top-links {
+  height: 40px;
+  margin: 10px auto;
+}
+
+.top-links td {
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.top-links td.share {
+  width: 240px;
+}
+
+.top-links td.share .text {
+  text-align: left;
+  padding-left: 3px;
+}
+
+.top-links td.help {
+  width: 360px;
+}
+
+.top-links td a {
+  font-size: 10px;
+  line-height: 25px;
+  height: 25px;
+}
+
+td#main-intro-text {
+  width: 360px;
+  padding-right: 8px;
+}
+
+td#table-of-contents {
+  padding: 5px 0px;
+}
+
+td#table-of-contents table {
+  width: 240px;
+  margin: auto;
+  background-color: #f8f8f8;
+  border: 1px solid #AAAAAA;
+  border-bottom: 4px solid #DDDDDD;
+  border-radius: 5px;
+  box-shadow: 0px 5px 25px -5px #888888;
+}
+
+td#table-of-contents table h3 {
+  color: #083a81;
+  font-size: 18px;
+  height: auto;
+  line-height: 125%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+td#table-of-contents table td {
+  border: 1px solid #eeeeee;
+  padding: 7px;
+}
+
+td#table-of-contents table td.title {
+  padding: 5px;
+  margin: 0;
+}
+
+td#table-of-contents table td p {
+  font-size: 11px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-table .main-content p {
+  font-size: 13px;
+  line-height: 21px;
+  text-align: left;
+  color: #404040;
+}
+
+.container-table .main-content #main-intro-text h2,
+.container-table .main-content #main-intro-text p,
+.container-table .main-content .full h2,
+.container-table .main-content .full p,
+.container-table .main-content .left h2,
+.container-table .main-content .left p,
+.container-table .main-content .right h2,
+.container-table .main-content .right p,
+.container-table .main-content .book-left h2,
+.container-table .main-content .book-left p {
+  margin-top: 8px;
+  margin-right: 21px;
+  margin-bottom: 3px;
+  margin-left: 21px;
+  text-align: left;
+}
+
+.container-table .main-content .full .imgContainer {
+  background-color: #222222;
+}
+
+.container-table .main-content .full img {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid #111111;
+}
+
+.container-table .main-content .book-left div.image {
+  position: relative;
+  margin: 13px 34px 21px 3px;
+  padding: 0;
+  -webkit-transform: perspective(100) rotateY(-3deg);
+  -moz-transform: rotateY(-3deg);
+  box-shadow: none;
+  -moz-perspective: 100px;
+}
+
+.container-table .main-content .book-left div.image img {
+  width: 160px;
+  height: auto;
+}
+
+.container-table .main-content .book-left div.image :before,
+.container-table .main-content .book-left div.image :after {
+  position: absolute;
+  z-index: -1;
+  top: 2%;
+  height: 96%;
+  content: ' ';
+}
+
+.container-table .main-content .book-left div.image :before {
+  left: 7.5%;
+  width: 100%;
+  background-color: #555;
+  -webkit-box-shadow: 0 20px 40px -20px #555;
+  -moz-box-shadow: 0 20px 40px -20px #555;
+  box-shadow: 0 20px 40px -20px #555;
+}
+
+.container-table .main-content .book-left div.image :after {
+  left: 100%;
+  width: 5%;
+  -webkit-transform: perspective(100) rotateY(20deg);
+  -moz-transform: rotateY(20deg);
+  background-color: #efefef;
+  box-shadow: inset 0 0 5px #aaa;
+}
+
+#upcoming {
+  text-align: center;
+  margin: auto;
+}
+
+#upcoming td {
+  text-align: center;
+  margin: auto;
+  width: 120px;
+  height: 300px;
+}
+
+#upcoming td h3 {
+  line-height: 125%;
+}
+
+#upcoming td p {
+  font-size: 14px;
+}
+
+#upcoming td p span {
+  display: block;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=core.css.map */
+
+/*** uncss> filename: tmp/css/mobile.css ***/
+
+@media only screen and (min-width: 320px) and (max-width: 630px), (max-device-width: 960px) {
+  h2,
+  h3 {
+    font-size: 34px !important;
+    line-height: 55px !important;
+  }
+
+  p,
+  a {
+    font-size: 21px !important;
+    line-height: 34px !important;
+  }
+
+  .main-content td.caption p,
+  .main-content td.caption a {
+    font-size: 13px !important;
+  }
+
+  .main-content td.caption p span {
+    display: block !important;
+  }
+
+  .main-content .left td.imageContainer img,
+  .main-content .right td.imageContainer img {
+    width: 100% !important;
+  }
+
+  #upcoming .date,
+  #upcoming .date a {
+    font-size: 16px !important;
+  }
+
+  #header-content #weblinks table {
+    height: 32px;
+  }
+
+  #header-content #weblinks table td {
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+
+  #header-content #weblinks table td a {
+    font-size: 13px !important;
+  }
+
+  #header-content .top-links td a,
+  #footer .top-links td a {
+    font-size: 11px !important;
+  }
+
+  #table-of-contents {
+    display: none;
+  }
+}
+
+/*////// view in browser //////*/
+
+/*# sourceMappingURL=mobile.css.map */
+
+</style>
+    <div id="bg" style="-moz-box-shadow: inset 0px -10px 600px 10px rgba(50, 50, 50, 0.03); -webkit-box-shadow: inset 0px -10px 600px 10px rgba(50, 50, 50, 0.03); box-shadow: inset 0px -10px 600px 10px rgba(50, 50, 50, 0.03); line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; width: 100%"><!--[if mso]><style type='text/css'>p,span,div,h1,h2,h3,table,tr,td{ mso-line-height-rule: exactly; }</style><![endif]-->
+      <table id="header-content" align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; color: #083A81; font-size: 11px; font-weight: bold; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; text-decoration: none; width: 600px">
         <tbody>
-          <tr>
-            <td colspan="2" width="600">
-              <table border="0" cellpadding="0" cellspacing="0" width="600">
+          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td colspan="2" width="600" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
                 <tbody>
-                  <tr class="top-links">
-                    <td align="center" valign="top" width="330" height="40" class="help">
-                      <table border="0" cellpadding="0" cellspacing="0" width="330">
+                  <tr class="top-links" style="height: 40px; line-height: 150%; margin: 10px auto; mso-line-height-rule: exactly; padding: 0">
+                    <td align="center" valign="top" width="330" height="40" class="help" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle; width: 360px">
+                      <table border="0" cellpadding="0" cellspacing="0" width="330" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
                         <tbody>
-                          <tr style="border-collapse: collapse;">
-                            <td style="border-collapse: collapse;"><a href="https://www.dfwworld.org/media-archive/eConnection/2015/May">View in Browser</a></td>
-                            <td style="border-collapse: collapse;">&nbsp;|&nbsp;</td>
-                            <td style="border-collapse: collapse;"><a href="target=&amp;pid=1496&amp;did=0&amp;tab=0">Privacy Policy</a></td>
-                            <td style="border-collapse: collapse;">&nbsp;|&nbsp;</td>
-                            <td style="border-collapse: collapse;"><a href="target=&amp;pid=1497&amp;did=0&amp;tab=0">Unsubscribe</a></td>
+                          <tr style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"><a href="https://www.dfwworld.org/media-archive/eConnection/2015/May" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">View in Browser</a></td>
+                            <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"> | </td>
+                            <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"><a href="https://www.dfwworld.org/target=&amp;pid=1496&amp;did=0&amp;tab=0" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Privacy Policy</a></td>
+                            <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"> | </td>
+                            <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"><a href="https://www.dfwworld.org/target=&amp;pid=1497&amp;did=0&amp;tab=0" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Unsubscribe</a></td>
                           </tr>
                         </tbody>
                       </table>
                     </td>
-                    <td align="center" valign="top" width="30" height="40" class="spacer">&nbsp;</td>
-                    <td align="right" valign="top" width="240" class="share">
-                      <table border="0" cellpadding="0" cellspacing="0" height="40">
+                    <td align="center" valign="top" width="30" height="40" class="spacer" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"> </td>
+                    <td align="right" valign="top" width="240" class="share" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle; width: 240px">
+                      <table border="0" cellpadding="0" cellspacing="0" height="40" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
                         <tbody>
-                          <tr style="border-collapse: collapse;">
-                            <td valign="top" align="center" width="25" height="25" class="icon-container"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank"><img src="http://www.dfwworld.org/image/facebook_icon_blue_round.gif" alt="Facebook icon" border="0" height="25" width="25"/></a></td>
-                            <td valign="top" align="left" width="40" height="25" class="text"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank">Like</a></td>
-                            <td valign="top" align="center" width="25" height="25" class="icon-container"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank"><img src="http://www.dfwworld.org/image/twitter_icon_blue_round.gif" alt="Twitter icon" border="0" height="25" width="25"/></a></td>
-                            <td valign="top" align="left" width="50" height="25" class="text"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank">Tweet</a></td>
-                            <td valign="top" align="center" width="25" height="25" class="icon-container"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank"><img src="http://www.dfwworld.org/image/email_icon_blue_round.gif" alt="Forward icon" border="0" height="25" width="25"/></a></td>
-                            <td valign="top" align="left" width="75" height="25" class="text"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank">Forward</a></td>
+                          <tr style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="center" width="25" height="25" class="icon-container" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/facebook_icon_blue_round.gif" alt="Facebook icon" border="0" height="25" width="25" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                            <td valign="top" align="left" width="40" height="25" class="text" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0 0 0 3px; text-align: left; vertical-align: middle"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Like</a></td>
+                            <td valign="top" align="center" width="25" height="25" class="icon-container" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/twitter_icon_blue_round.gif" alt="Twitter icon" border="0" height="25" width="25" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                            <td valign="top" align="left" width="50" height="25" class="text" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0 0 0 3px; text-align: left; vertical-align: middle"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Tweet</a></td>
+                            <td valign="top" align="center" width="25" height="25" class="icon-container" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/email_icon_blue_round.gif" alt="Forward icon" border="0" height="25" width="25" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                            <td valign="top" align="left" width="75" height="25" class="text" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0 0 0 3px; text-align: left; vertical-align: middle"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Forward</a></td>
                           </tr>
                         </tbody>
                       </table>
@@ -50,122 +476,127 @@
               </table>
             </td>
           </tr>
-          <tr id="billboard" bgcolor="#F0F0F0">
-            <td colspan="2" width="600"><a href="https://www.dfwworld.org" target="_blank" title="dfwworld.org"><img src="https://www.dfwworld.org/image/EC_header_2014.jpg" alt="dfwworld.org eConnection" style="border-width: 0;" height="120" width="600"/></a></td>
+          <tr id="billboard" bgcolor="#F0F0F0" style="background: #F0F0F0; font-size: 55px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td colspan="2" width="600" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org" target="_blank" title="dfwworld.org" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="https://www.dfwworld.org/image/EC_header_2014.jpg" alt="dfwworld.org eConnection" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" height="120" width="600" /></a></td>
           </tr>
-          <tr id="weblinks" bgcolor="#083A81">
-            <td colspan="2" width="600">
-              <table width="600" height="25">
-                <tr>
-                  <td align="center" valign="middle" width="14%"><a href="https://www.dfwworld.org/">HOME</a></td>
-                  <td align="center" valign="middle" width="14%"><a href="https://www.dfwworld.org/Join/Individual">JOIN/RENEW</a></td>
-                  <td align="center" valign="middle" width="14%"><a href="https://www.dfwworld.org/Events">EVENTS</a></td>
-                  <td align="center" valign="middle" width="14%"><a href="https://www.dfwworld.org/Donate">DONATE</a></td>
-                  <td align="center" valign="middle" width="14%"><a href="https://www.dfwworld.org/media/podcasts">PODCASTS</a></td>
+          <tr id="weblinks" bgcolor="#083A81" style="background: #083A81; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td colspan="2" width="600" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table width="600" height="25" style="border-collapse: collapse; height: 25px; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0">
+                <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                  <td align="center" valign="middle" width="14%" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px 0 5px"><a href="https://www.dfwworld.org/" style="color: #F0F0F0; font-size: 12px; font-weight: bold; height: 25px; line-height: 15px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">HOME</a></td>
+                  <td align="center" valign="middle" width="14%" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px 0 5px"><a href="https://www.dfwworld.org/Join/Individual" style="color: #F0F0F0; font-size: 12px; font-weight: bold; height: 25px; line-height: 15px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">JOIN/RENEW</a></td>
+                  <td align="center" valign="middle" width="14%" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px 0 5px"><a href="https://www.dfwworld.org/Events" style="color: #F0F0F0; font-size: 12px; font-weight: bold; height: 25px; line-height: 15px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">EVENTS</a></td>
+                  <td align="center" valign="middle" width="14%" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px 0 5px"><a href="https://www.dfwworld.org/Donate" style="color: #F0F0F0; font-size: 12px; font-weight: bold; height: 25px; line-height: 15px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">DONATE</a></td>
+                  <td align="center" valign="middle" width="14%" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px 0 5px"><a href="https://www.dfwworld.org/media/podcasts" style="color: #F0F0F0; font-size: 12px; font-weight: bold; height: 25px; line-height: 15px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">PODCASTS</a></td>
                 </tr>
               </table>
             </td>
           </tr>
-          <tr bgcolor="#f0f0f0" height="40" class="social">
-            <td align="center" width="300" height="40">
-              <table>
-                <tr>
-                  <td width="40" align="center" valign="middle" class="social-icon"><a href="https://www.facebook.com/dfwworld"><img src="http://www.dfwworld.org/image/facebook_icon_blue_round.gif" width="30" alt="Facebook"/></a></td>
-                  <td width="40" align="center" valign="middle" class="social-icon"><a href="http://www.linkedin.com/groups?gid=105589&amp;trk=anetsrch_name&amp;goback=%2Egdr_1269612324772_1"><img src="http://www.dfwworld.org/image/linkedin_icon_blue_round.gif" width="30" alt="LinkedIn"/></a></td>
-                  <td width="40" align="center" valign="middle" class="social-icon"><a href="http://twitter.com/dfwworld"><img src="http://www.dfwworld.org/image/twitter_icon_blue_round.gif" width="30" alt="Twitter"/></a></td>
-                  <td width="40" align="center" valign="middle" class="social-icon"><a href="http://instagram.com/dfwworld"><img src="http://www.dfwworld.org/image/instagram_icon_blue_round.gif" width="30" alt="Instagram"/></a></td>
-                  <td width="40" align="center" valign="middle" class="social-icon"><a href="http://www.youtube.com/wacadmin"><img src="http://www.dfwworld.org/image/youtube_icon_blue_round.gif" width="30" alt="YouTube"/></a></td>
+          <tr bgcolor="#f0f0f0" height="40" class="social" style="height: 40px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td align="center" width="300" height="40" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                  <td width="40" align="center" valign="middle" class="social-icon" style="border-collapse: collapse; height: 40px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; width: 40px"><a href="https://www.facebook.com/dfwworld" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/facebook_icon_blue_round.gif" width="30" alt="Facebook" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                  <td width="40" align="center" valign="middle" class="social-icon" style="border-collapse: collapse; height: 40px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; width: 40px"><a href="http://www.linkedin.com/groups?gid=105589&amp;trk=anetsrch_name&amp;goback=%2Egdr_1269612324772_1" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/linkedin_icon_blue_round.gif" width="30" alt="LinkedIn" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                  <td width="40" align="center" valign="middle" class="social-icon" style="border-collapse: collapse; height: 40px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; width: 40px"><a href="http://twitter.com/dfwworld" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/twitter_icon_blue_round.gif" width="30" alt="Twitter" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                  <td width="40" align="center" valign="middle" class="social-icon" style="border-collapse: collapse; height: 40px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; width: 40px"><a href="http://instagram.com/dfwworld" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/instagram_icon_blue_round.gif" width="30" alt="Instagram" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                  <td width="40" align="center" valign="middle" class="social-icon" style="border-collapse: collapse; height: 40px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; width: 40px"><a href="http://www.youtube.com/wacadmin" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/youtube_icon_blue_round.gif" width="30" alt="YouTube" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
                 </tr>
               </table>
             </td>
-            <td align="center" width="300" height="40">
-              <h2 id="date">May 2015</h2>
+            <td align="center" width="300" height="40" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <h2 id="date" style="color: #A00008; font-size: 21px; line-height: 34px; margin: 0; mso-line-height-rule: exactly; padding: 0">June 2015</h2>
             </td>
           </tr>
         </tbody>
       </table>
-      <table id="featured" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000" class="container-table">
+      <table id="featured" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr class="main-content">
-            <td class="full"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2388&amp;cerid=0&amp;cdt=6%2f18%2f2015" target="_blank"><img src="https://www.dfwworld.org/image/EM_MonaEltawyHeadscarvesAndHymens.jpg" style="border-width: 0;" height="undefined" width="undefined"/></a></td>
+          <tr class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2388&amp;cerid=0&amp;cdt=6%2f18%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="https://www.dfwworld.org/image/EM_MonaEltawyHeadscarvesAndHymens.jpg" style="border-bottom-color: #111111; border-bottom-style: solid; border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 600px" height="undefined" width="undefined" /></a></td>
           </tr>
-          <tr bgcolor="#222222" class="main-content">
-            <td class="caption">
-              <p>Join us&nbsp;<a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2388&amp;cerid=0&amp;cdt=6%2f18%2f2015" target="_blank">
-                   
-                  Thursday, June 18, at 6:30 PM</a><span>&nbsp;at the Rosewood Crescent&nbsp;in   Dallas.</span></p>
+          <tr bgcolor="#222222" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td class="caption" style="background: #222222; border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px; vertical-align: middle" bgcolor="#222222" valign="middle">
+              <p style="color: #FFFFFF; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">Join us <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2388&amp;cerid=0&amp;cdt=6%2f18%2f2015" target="_blank" style="border-bottom-color: #E7F1FD; border-bottom-style: solid; border-bottom-width: 1px; color: #E7F1FD; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">
+
+                  Thursday, June 18, at 6:30 PM</a><span> at the Rosewood Crescent in   Dallas.</span></p>
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td class="forward">
-              <table cellpadding="0" cellspacing="0" width="600">
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td class="forward" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
                 <tbody>
-                  <tr>
-                    <td id="main-intro-text" valign="top" width="360">
-                      <h2>Headscarves and Hymens: Why the Middle East Needs a Sexual Revolution</h2>
-                      <p>You can figure no one on any continent has ever called Mona Eltahawy a "shrinking violet." She's a globally-known critic of misogyny in Islam and a hard-driving journalist not afraid to confront the powerful. The title of her latest book gives a hint of her "direct" nature: <em>Headscarves and Hymens: Why the Middle East Needs a Sexual Revolution</em>. She proudly accepts the label "radical feminist Muslim."<br/><br/>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td id="main-intro-text" valign="top" width="360" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0 8px 0 0; width: 360px">
+                      <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Headscarves and Hymens: Why the Middle East Needs a Sexual Revolution</h2>
+                      <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">You can figure no one on any continent has ever called Mona Eltahawy a "shrinking violet." She's a globally-known critic of misogyny in Islam and a hard-driving journalist not afraid to confront the powerful. The title of her latest book gives a hint of her "direct" nature: <em>Headscarves and Hymens: Why the Middle East Needs a Sexual Revolution</em>. She proudly accepts the label "radical feminist Muslim."<br /><br />
                       </p>
                     </td>
-                    <td id="table-of-contents" valign="top" width="240">
-                      <table cellpadding="0" cellspacing="0" height="auto" width="240">
+                    <td id="table-of-contents" valign="top" width="240" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px 0px">
+                      <table cellpadding="0" cellspacing="0" height="auto" width="240" style="background: #f8f8f8; border-collapse: collapse; border-color: #aaaaaa#aaaaaa#dddddd; border-radius: 5px; border-style: solid; border-width: 1px 1px 4px; box-shadow: 0px 5px 25px -5px #888888; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; width: 240px" bgcolor="#f8f8f8">
                         <tbody>
-                          <tr>
-                            <td valign="middle" align="center" class="title">
-                              <h3 class="center"><em>In This Issue:</em></h3>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="middle" align="center" class="title" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px">
+                              <h3 class="center" style="color: #083a81; font-size: 18px; height: auto; line-height: 125%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle; width: 100%" align="center"><em>In This Issue:</em></h3>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_1" class="no-underline">A TEXAS PROFESSOR LOOKS AT REAGAN</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_1" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">GLOBAL I.Q. MINUTES WITH JIM FALK</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_2" class="no-underline">THE COMPETITIVE ACADEMIC FUTURE</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_2" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">A TEXAS PROFESSOR LOOKS AT REAGAN</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_3" class="no-underline">A NEW CHAPTER IN THE COUNCIL'S BOOK</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_3" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">THE COMPETITIVE ACADEMIC FUTURE</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_4" class="no-underline">BANK OF AMERICA CHARITABLE FOUNDATION CONTINUES SUPPORT OF CAREER DAY</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_4" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">A NEW CHAPTER IN THE COUNCIL'S BOOK</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_5" class="no-underline">MEXICO FOREIGN AFFAIRS SECRETARY ADDRESSES FINAL PROGRAM IN SERIES</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_5" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">BANK OF AMERICA CHARITABLE FOUNDATION CONTINUES SUPPORT OF CAREER DAY</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_6" class="no-underline">GERMAN MARSHALL FUND SELECTS COUNCIL/MERIDIAN MEMBER</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_6" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">MEXICO FOREIGN AFFAIRS SECRETARY ADDRESSES FINAL PROGRAM IN SERIES</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_7" class="no-underline">La Belle Provence</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_7" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">GERMAN MARSHALL FUND SELECTS COUNCIL/MERIDIAN MEMBER</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_8" class="no-underline">THE GLOBAL JWAC EFFECT</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_8" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">WORLDQUEST: LA BELLE PROVENCE</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_9" class="no-underline">DALAI LAMA RETURNS TO DALLAS</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_9" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">THE GLOBAL JWAC EFFECT</a></p>
                             </td>
                           </tr>
-                          <tr>
-                            <td valign="top" align="left">
-                              <p><a href="#toc_item_10" class="no-underline">MR. SURPRISE AND THE COUNCIL MEMBER</a></p>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_10" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">DALAI LAMA RETURNS TO DALLAS</a></p>
+                            </td>
+                          </tr>
+                          <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                            <td valign="top" align="left" style="border-collapse: collapse; border: 1px solid #eeeeee; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 7px">
+                              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 11px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><a href="#toc_item_11" class="no-underline" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">THE MAN BEHIND LA MADELEINE</a></p>
                             </td>
                           </tr>
                         </tbody>
@@ -178,360 +609,420 @@
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td valign="top" align="left" width="600px" class="book-left"><a name="toc_item_1"></a>
-              <h2 align="left">A TEXAS PROFESSOR LOOKS AT REAGAN</h2>
+          <tr bgcolor="#F0F0F0" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" width="600" align="left" style="background: #F0F0F0; border-collapse: collapse; border: 1px solid #dddddd; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0" class="left" bgcolor="#F0F0F0">
+              <table style="border-collapse: collapse; float: left; line-height: 150%; margin: 5px 8px 0px 3px; mso-line-height-rule: exactly; padding: 0" width="120" align="left">
+                <tbody>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="imageContainer" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/media/podcasts" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="http://www.dfwworld.org/image/podcast_icon.jpg" height="auto" width="120" align="left" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                  </tr>
+                </tbody>
+              </table><a name="toc_item_1" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_1"></a>
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">GLOBAL I.Q. MINUTES WITH JIM FALK</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Our latest Global I.Q. Minute is with <strong>Republican presidential candidate Dr. Ben Carson</strong>. Carson describes the world as a "third-grade classroom with no teacher," and says the U.S. needs to provide global leadership. He wants to end the ISIS threat now ("Nothing I wouldn't use to destroy them") and employ oil as an implement to control Russian President Vladimir Putin. Additionally, Dr. Carson proposes giving Palestinians a nation carved out of potentially verdant land in either Jordan or Egypt. <a href="http://podcast.dfwworld.org/2015_GIQ_DrBenCarson_5-28.mp3" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Listen now</a> for the full Global I.Q. Minute.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Council President Jim Falk and <em>The New Yorker</em> writer <strong>Evan Osnos</strong> recently sat down for an insightful Global I.Q. Minute. Osnos, the author of <em>Age of Ambition: Chasing Fortune, Truth and Faith in the New China</em>, says that the China's growing economic power shows it is time to hear their voice in world affairs. Within, he says, the nation's government is coping with a population that has become acquainted with new freedoms while, outside, the U.S. faces the issue of "figuring out how much control China will have over its own neighborhood and how much the U.S. is prepared for that change." <a href="http://podcast.dfwworld.org/2015_GIQ_EvanOsnos_5-27.mp3" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Hear the full interview now →</a></p>
+
             </td>
           </tr>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td valign="top" align="left" width="600px" class="book-left">
-              <table width="180" height="auto" align="left" class="imageContainer">
-                <tr>
-                  <td align="left" class="book-left">
-                    <div class="image"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2356&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank"><img label="image" src="https://www.dfwworld.org/image/BC_ReaganTheLife.jpg" height="auto" width="160" align="middle"/></a></div>
+        </tbody>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
+        <tbody>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
+        <tbody>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" align="left" width="600px" class="book-left" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a name="toc_item_2" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_2"></a>
+              <h2 align="left" style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left">A TEXAS PROFESSOR LOOKS AT REAGAN</h2>
+            </td>
+          </tr>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" align="left" width="600px" class="book-left" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table width="180" height="auto" align="left" class="imageContainer" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                  <td align="left" class="book-left" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <div class="image" style="-moz-perspective: 100px; -moz-transform: rotateY(-3deg); -webkit-transform: perspective(100) rotateY(-3deg); box-shadow: none; line-height: 150%; margin: 13px 34px 21px 3px; mso-line-height-rule: exactly; padding: 0; position: relative"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2356&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/BC_ReaganTheLife.jpg" height="auto" width="160" align="middle" style="border: 0; height: auto; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 160px" /></a></div>
                   </td>
                 </tr>
               </table>
-              <p>H.W Brands, a University of Texas professor and renowned historian, examines President Ronald Reagan’s youthful ambitions and political ideals in two Council programs on Tuesday, June 24.<br/><br/>He’ll discuss his latest book, <em>Reagan: The Life</em>, at an <a href='https://www.dfwworld.org/Events?cid=5&ceid=2286&cerid=0&cdt=6%2f23%2f2015' target='_blank'>11:30 AM luncheon program and book signing</a> at The Fort Worth Club in downtown Cowtown, then that evening he’ll discuss the late president’s life in a program at Visit Addison. That event begins with a <a href='https://www.dfwworld.org/Events?cid=5&ceid=2356&cerid=0&cdt=6%2f23%2f2015' target='_blank'>6:30 PM reception followed by a program and book signing</a>.<br/><br/>Brand’s Reagan book was aided by newly available sources and explores the conservative icon’s support of New Deal creator President Franklin Roosevelt.The author has authoritative knowledge of both presidents, having been a Pulitzer Prize finalist in 2009 with his book <em>Traitor to His Class: The Privilege Life</em> and <em>Radical Presidency of Franklin Delano Roosevelt</em>.<br/><br/>Among Brands books are another Pulitzer finalist, <em>The First American: The Life and Times of Benjamin Franklin</em> in 2002, and, in 2004, <em>Lone Star Nation: The Epic Story of the Battle for Texas Independence</em>.<br/><br/>Raised in Oregon and educated at Stanford, Brand taught at Texas A&M for 17 years before moving to UT Austin in 2005.<br/><br/>
-              </p>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">H.W Brands, a University of Texas professor and renowned historian, examines President Ronald Reagan’s youthful ambitions and political ideals in two Council programs on Tuesday, June 24.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">He’ll discuss his latest book, <em>Reagan: The Life</em>, at an <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">11:30 AM luncheon program and book signing</a> at The Fort Worth Club in downtown Cowtown, then that evening he’ll discuss the late president’s life in a program at Visit Addison. That event begins with a <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2356&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">6:30 PM reception followed by a program and book signing</a>.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Brand’s Reagan book was aided by newly available sources and explores the conservative icon’s support of New Deal creator President Franklin Roosevelt.The author has authoritative knowledge of both presidents, having been a Pulitzer Prize finalist in 2009 with his book <em>Traitor to His Class: The Privilege Life</em> and <em>Radical Presidency of Franklin Delano Roosevelt</em>.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Among Brands books are another Pulitzer finalist, <em>The First American: The Life and Times of Benjamin Franklin</em> in 2002, and, in 2004, <em>Lone Star Nation: The Epic Story of the Battle for Texas Independence</em>.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Raised in Oregon and educated at Stanford, Brand taught at Texas A&amp;M for 17 years before moving to UT Austin in 2005.</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full"><a name="toc_item_2"></a>
-              <div class="imgContainer"><a href="https://www.dfwworld.org/IEP/WQ" target="_blank"><img label="image" src="/image/EC_theCompetitiveAcademicFuture.jpg" height="auto" width="600"/></a>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a name="toc_item_3" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_3"></a>
+              <div class="imgContainer" style="background: #222222; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/IEP/WQ" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_theCompetitiveAcademicFuture.jpg" height="auto" width="600" style="border-bottom-color: #111111; border-bottom-style: solid; border-width: 0 0 3px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 600px" /></a>
               </div>
             </td>
           </tr>
-          <tr bgcolor="#222222" class="main-content">
-            <td class="caption">
-              <p>World Affairs Councils of America President and CEO Bill Clifford with the Plano Shepton Academic World Quest Team of  freshman Sharon Jiang and (back, from left) sophomores Inan Sinha, Noah Schochet and Ankit Reddy.</p>
+          <tr bgcolor="#222222" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td class="caption" style="background: #222222; border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px; vertical-align: middle" bgcolor="#222222" valign="middle">
+              <p style="color: #FFFFFF; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">World Affairs Councils of America President and CEO Bill Clifford with the Plano Shepton Academic World Quest Team of  freshman Sharon Jiang and (back, from left) sophomores Inan Sinha, Noah Schochet and Ankit Reddy.</p>
             </td>
           </tr>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full">
-              <h2>THE COMPETITIVE ACADEMIC FUTURE</h2>
-              <p>For the first time in four years, the National Academic WorldQuest Championship was NOT won by a team from the Plano Independent School District. But there is a foundation for a national rebound. Unlike any other district in the nation, Plano has three schools now with 21st century national championship round experience: Plano Senior High, Plano West and now Plano Shepton.<br/><br/>The regional WorldQuest champ, Shepton, a 9th and 10th grade school competing against against more than 40 other high schools, finished third nationally. First place went to DuPont Manual High School of Louisville, KY., the last team to hold the national title before Plano took it 4 years in a row. Second place went to Keystone School of San Antonio, once described by The College Board as “the best school in the world.”<br/><br/>Shepton’s team included sophomores Inan Sinha, Ankit Reddy and Noah Schochet and freshman Sharon Jiang. Academic Coach Janis Bates, who teaches Geography and Advanced Placement Human Geography, says that “as ninth and tenth graders I thought they did incredibly well and am so proud of them. &hellip;They’ve already planned to team up again when Sharon gets to West."<br/><br/>Outside of the competition, the highlight of the Washington, D.C. event was a $500,000 pledge by San Antonio businessman Carlos Alvarez and his wife Malu to support the Academic WorldQuest National Competition. It is the largest gift to date for any World Affairs Councils of America fundraising initiative and will help create an endowment to sustain and expand the national WorldQuest competition. Mr. Alvarez is the chairman and CEO of San Antonio-based Gambrinus Co., a craft beer company best known for its Shiner brand. WACA President and CEO Bill Clifford described the Alvarez’s generosity demonstrated “they truly understand the value of educating and engaging the public, and especially students, in international affairs and we are incredibly grateful for their commitment.”<br/><br/>
-              </p>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">THE COMPETITIVE ACADEMIC FUTURE</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">For the first time in four years, the National Academic WorldQuest Championship was NOT won by a team from the Plano Independent School District. But there is a foundation for a national rebound. Unlike any other district in the nation, Plano has three schools now with 21st century national championship round experience: Plano Senior High, Plano West and now Plano Shepton.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The regional WorldQuest champ, Shepton, a 9th and 10th grade school competing against against more than 40 other high schools, finished third nationally. First place went to DuPont Manual High School of Louisville, KY., the last team to hold the national title before Plano took it 4 years in a row. Second place went to Keystone School of San Antonio, once described by The College Board as “the best school in the world.”</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Shepton’s team included sophomores Inan Sinha, Ankit Reddy and Noah Schochet and freshman Sharon Jiang. Academic Coach Janis Bates, who teaches Geography and Advanced Placement Human Geography, says that “as ninth and tenth graders I thought they did incredibly well and am so proud of them. …They’ve already planned to team up again when Sharon gets to West."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Outside of the competition, the highlight of the Washington, D.C. event was a $500,000 pledge by San Antonio businessman Carlos Alvarez and his wife Malu to support the <a href="http://www.worldaffairscouncils.org/2011/main/home.cfm?database=programs&amp;Category=AcademicWorldQuest&amp;Section=Academic%20WorldQuest%202014-2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Academic WorldQuest National Competition</a>. It is the largest gift to date for any World Affairs Councils of America fundraising initiative and will help create an endowment to sustain and expand the national WorldQuest competition. Mr. Alvarez is the chairman and CEO of San Antonio-based Gambrinus Co., a craft beer company best known for its Shiner brand. WACA President and CEO Bill Clifford described the Alvarez’s generosity demonstrated “they truly understand the value of educating and engaging the public, and especially students, in international affairs and we are incredibly grateful for their commitment.”</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full"><a name="toc_item_3"></a>
-              <div class="imgContainer"><a href="https://www.dfwworld.org/Events" target="_blank"><img label="image" src="image/EC_AdrianWooldridgeHERobertJordan.jpg" height="auto" width="600"/></a>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a name="toc_item_4" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_4"></a>
+              <div class="imgContainer" style="background: #222222; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_AdrianWooldridgeHERobertJordan.jpg" height="auto" width="600" style="border-bottom-color: #111111; border-bottom-style: solid; border-width: 0 0 3px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 600px" /></a>
               </div>
             </td>
           </tr>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full">
-              <h2>A NEW CHAPTER IN THE COUNCIL'S BOOK</h2>
-              <p>The Council is expanding into the extraordinarily vibrant Highway 121 Corridor by forming the Collin County Chapter of the World Affairs Council. That new chapter immediately joins the mission of connecting North Texas with the world  by scheduling two intriguing luncheon programs.<br/><br/>The inaugural presentation, on <a href='https://www.dfwworld.org/Events?cid=5&ceid=2386&cerid=0&cdt=6%2f25%2f2015' target='_blank'>Thursday, June 25, at the El Dorado Country Club in McKinney, features Adrian Wooldridge</a>, managing editor of <em>The Economist</em> and its influential Schumpeter Columnist. His topic is his latest book, <em>The Great Disruption: How Business is Coping in Turbulent Times</em>.<br/><br/>On <a href='https://www.dfwworld.org/Events?cid=5&ceid=2402&cerid=0&cdt=7%2f7%2f2015' target='_blank'>Tuesday, July 7, also at the country club</a>, the chapter visits a topic inspired by 9/11 and its aftermath. <strong>Ambassador Robert Jordan</strong> will discuss his autobiographical book, <em>Desert Diplomat: Inside Saudi Arabia Following 9/11</em>. The ambassador's insight into current relations between the U.S. and Saudi Arabia continues to be sought by journalists and others here and abroad.<br/><br/>Each speaker will present a luncheon program in McKinney, then, that evening, a program and book signing at the Rosewood Crescent in Downtown Dallas.<br/><br/>
-              </p>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">A NEW CHAPTER IN THE COUNCIL'S BOOK</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The Council is expanding into the extraordinarily vibrant Highway 121 Corridor by forming the Collin County Chapter of the World Affairs Council. That new chapter immediately joins the mission of connecting North Texas with the world  by scheduling two intriguing luncheon programs.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The inaugural presentation, on <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2386&amp;cerid=0&amp;cdt=6%2f25%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Thursday, June 25, at the El Dorado Country Club in McKinney, features Adrian Wooldridge</a>, managing editor of <em>The Economist</em> and its influential Schumpeter Columnist. His topic is his latest book, <em>The Great Disruption: How Business is Coping in Turbulent Times</em>.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">On <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2402&amp;cerid=0&amp;cdt=7%2f7%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Tuesday, July 7, also at the country club</a>, the chapter visits a topic inspired by 9/11 and its aftermath. <strong>Ambassador Robert Jordan</strong> will discuss his autobiographical book, <em>Desert Diplomat: Inside Saudi Arabia Following 9/11</em>. The ambassador's insight into current relations between the U.S. and Saudi Arabia continues to be sought by journalists and others here and abroad.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Each speaker will present a luncheon program in McKinney, then, that evening, a program and book signing at the Rosewood Crescent in Downtown Dallas.</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full"><a name="toc_item_4"></a>
-              <div class="imgContainer"><a href="https://www.dfwworld.org/IEP" target="_blank"><img label="image" src="/image/EC_bankOfAmericaCharitableFoundationContinuesSupportOfCareerDay.jpg" height="auto" width="600"/></a>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a name="toc_item_5" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_5"></a>
+              <div class="imgContainer" style="background: #222222; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/IEP" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_bankOfAmericaCharitableFoundationContinuesSupportOfCareerDay.jpg" height="auto" width="600" style="border-bottom-color: #111111; border-bottom-style: solid; border-width: 0 0 3px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 600px" /></a>
               </div>
             </td>
           </tr>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full">
-              <h2>BANK OF AMERICA CHARITABLE FOUNDATION CONTINUES SUPPORT OF CAREER DAY</h2>
-              <p>Call it "investing in success." The Bank of America Charitable Foundation, Inc., continues its investment in the future of North Texas students by presenting its second $10,000 grant in support of the annual World Affairs Council International Career Day.<br/><br/>Jill Blanchar, the Bank of America Corporation Operational Risk Executive, made the presentation to Council Vice President of Development & Partnerships Whitney Schneider.<br/><br/>The grant provides a significant foundation for the Council's International Career Day, organized each year by our International Education Program. This regional event has provided thousands of North Texas students with access to people involved in international careers in law, finance, military, human rights, humanitarian efforts and many other global professions.<br/><br/>"Thanks to Bank of America, we can continue to encourage students to be ambitious globally and to learn how to take advantage of opportunities that benefit their own lives and neighborhoods. This is a wonderful example of how knowledge is personal power," said International Education Program Executive Director Jennifer Bowden.<br/><br/>The next International Career Day will be in the fall. Follow Bank of America's charitable efforts on <a href='https://twitter.com/BreidenbachG' target='_blank'>Twitter</a> and on <a href='https://www.facebook.com/BankofAmerica' target='_blank'>Facebook</a>.<br/><br/>
-              </p>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Call it "investing in success." The Bank of America Charitable Foundation, Inc., continues its investment in the future of North Texas students by presenting its second $10,000 grant in support of the annual World Affairs Council International Career Day.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Jill Blanchar, the Bank of America Corporation Operational Risk Executive, made the presentation to Council Vice President of Development &amp; Partnerships Whitney Schneider.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The grant provides a significant foundation for the Council's International Career Day, organized each year by our International Education Program. This regional event has provided thousands of North Texas students with access to people involved in international careers in law, finance, military, human rights, humanitarian efforts and many other global professions.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">"Thanks to Bank of America, we can continue to encourage students to be ambitious globally and to learn how to take advantage of opportunities that benefit their own lives and neighborhoods. This is a wonderful example of how knowledge is personal power," said International Education Program Executive Director Jennifer Bowden.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The next International Career Day will be in the fall. Follow Bank of America's charitable efforts on <a href="https://twitter.com/BreidenbachG" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Twitter</a> and on <a href="https://www.facebook.com/BankofAmerica" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Facebook</a>.</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td valign="top" width="600" align="right" class="right">
-              <table style="float: right; margin: 0 0 15px 15px" width="240" align="right">
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" width="600" align="right" class="right" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table style="border-collapse: collapse; float: right; line-height: 150%; margin: 0 0 15px 15px; mso-line-height-rule: exactly; padding: 0" width="240" align="right">
                 <tbody>
-                  <tr>
-                    <td class="imageContainer"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2349&amp;cerid=0&amp;cdt=7%2f10%2f2015" target="_blank"><img label="image" src="/image/EC_mexicoForeignAffairsSecretaryAddressesFinalProgramInSeries.jpg" height="auto" width="240" align="right"/></a>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="imageContainer" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2349&amp;cerid=0&amp;cdt=7%2f10%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_mexicoForeignAffairsSecretaryAddressesFinalProgramInSeries.jpg" height="auto" width="240" align="right" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="caption">
-                      <p>Dr. José Antonio Meade, Mexico's Foreign Secretary</p>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="caption" style="background: #222222; border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px; vertical-align: middle" bgcolor="#222222" valign="middle">
+                      <p style="color: #FFFFFF; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">Dr. José Antonio Meade, Mexico's Foreign Secretary</p>
                     </td>
                   </tr>
                 </tbody>
-              </table><a name="toc_item_5"></a>
-              <h2>MEXICO FOREIGN AFFAIRS SECRETARY ADDRESSES FINAL PROGRAM IN SERIES</h2>
-              <p>Dr. José Antonio Meade, Mexico's Foreign Secretary since 2012, headlines the <a href='https://www.dfwworld.org/Events?cid=5&ceid=2349&cerid=0&cdt=7%2f10%2f2015' target='_blank'>final program in the successful Council series, “Strengthening the Partnership: Mexico & Texas.”</a><br/><br/>He'll discuss “New Opportunities in Mexico/Texas Relations” at the noon luncheon program at the InterContinental Dallas. Secretary Kuribreña has extensive experience in banking, petroleum, education and law.<br/><br/>The series is presented by the Council in partnership with the Consulate General of Mexico in Dallas, <em>The Dallas Morning News</em> and the Mexico Institute of the Woodrow Wilson International Center for Scholars in Washington.<br/><br/>The event is sponsored by Dell Services; Haynes and Boone, LLP; AT&T; Aeromexico; Rosewood Crescent and the Latino Center for Leadership Development. Additional sponsorship support provided by Alcatel-Lucent. Media sponsor is The Dallas Morning News<br/><br/>
-              </p>
+              </table><a name="toc_item_6" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_6"></a>
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">MEXICO FOREIGN AFFAIRS SECRETARY ADDRESSES FINAL PROGRAM IN SERIES</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Dr. José Antonio Meade, Mexico's Foreign Secretary since 2012, headlines the <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2349&amp;cerid=0&amp;cdt=7%2f10%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">final program in the successful Council series, “Strengthening the Partnership: Mexico &amp; Texas.”</a></p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">He'll discuss “New Opportunities in Mexico/Texas Relations” at the noon luncheon program at the InterContinental Dallas. Secretary Kuribreña has extensive experience in banking, petroleum, education and law.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The series is presented by the Council in partnership with the Consulate General of Mexico in Dallas, <em>The Dallas Morning News</em> and the Mexico Institute of the Woodrow Wilson International Center for Scholars in Washington.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The event is sponsored by Dell Services; Haynes and Boone, LLP; AT&amp;T; Aeromexico; Rosewood Crescent and the Latino Center for Leadership Development. Additional sponsorship support provided by Alcatel-Lucent. Media sponsor is <em>The Dallas Morning News</em>.</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td valign="top" width="600" align="left" class="left">
-              <table style="float: left; margin: 0 15px 15px 0" width="240" align="left">
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" width="600" align="left" class="left" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table style="border-collapse: collapse; float: left; line-height: 150%; margin: 0 15px 15px 0; mso-line-height-rule: exactly; padding: 0" width="240" align="left">
                 <tbody>
-                  <tr>
-                    <td class="imageContainer"><a href="https://www.dfwworld.org/MMF" target="_blank"><img label="image" src="image/EC_GMF_DylanLockett.jpg" height="auto" width="240" align="left"/></a>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="imageContainer" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/MMF" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_GMF_DylanLockett.jpg" height="auto" width="240" align="left" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="caption">
-                      <p>Dylan Locket</p>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="caption" style="background: #222222; border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px; vertical-align: middle" bgcolor="#222222" valign="middle">
+                      <p style="color: #FFFFFF; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">Dylan Locket</p>
                     </td>
                   </tr>
                 </tbody>
-              </table><a name="toc_item_6"></a>
-              <h2>GERMAN MARSHALL FUND SELECTS COUNCIL/MERIDIAN MEMBER</h2>
-              <p>Dylan Lockett, a member of both the Council and our Meridian: Global Young Professionals, is onf of three Texans selected among the 75 Marshall Memorial Fellows from across the nation.<br/><br/>The Fellows are high-achieving "exchange professionals" who will go to Europe this fall through what the German Marshall Fund of the United States describes as its "flagship leadership development program." The Council annually assists the GMF in finding qualified applicants.  The other Texans are David Kim, Houston's deputy assistant director of Housing and Community Development, and Eduardo Parra, principal engineer at CDM Smith in San Antonio.<br/><br/>Dylan says that he hopes "to better understand business and political sentiment in the EU, beyond what can be apprehended through the media or visiting European tourist attractions.”<br/><br/>He is a consultant with Accenture, the international management consulting, technology services and outsourcing company. A 10-year U.S. Air Force veteran with Southwest Asia deployment, the Texas A&M graduate holds an MBA from Duke University’s Fuqua School of Business. He’s a frequent European traveler and lived in Brussels as an undergrad.<br/><br/>
-              </p>
+              </table><a name="toc_item_7" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_7"></a>
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">GERMAN MARSHALL FUND SELECTS COUNCIL/MERIDIAN MEMBER</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Dylan Lockett, a member of both the Council and our Meridian: Global Young Professionals, is one of three Texans selected among the <a href="http://www.gmfus.org/" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">75 Marshall Memorial Fellows</a> from across the nation.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The Fellows are high-achieving "exchange professionals" who will go to Europe this fall through what the German Marshall Fund of the United States describes as its "flagship leadership development program." The Council <a href="https://www.dfwworld.org/MMF" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">annually assists the GMF</a> in finding qualified applicants.  The other Texans are David Kim, Houston's deputy assistant director of Housing and Community Development, and Eduardo Parra, principal engineer at CDM Smith in San Antonio.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Dylan says that he hopes "to better understand business and political sentiment in the EU, beyond what can be apprehended through the media or visiting European tourist attractions.”</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">He is a consultant with Accenture, the international management consulting, technology services and outsourcing company. A 10-year U.S. Air Force veteran with Southwest Asia deployment, the Texas A&amp;M graduate holds an MBA from Duke University’s Fuqua School of Business. He’s a frequent European traveler and lived in Brussels as an undergrad.</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full"><a name="toc_item_7"></a>
-              <div class="imgContainer"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2403&amp;cerid=0&amp;cdt=7%2f30%2f2015" target="_blank"><img label="image" src="image/WorldQuest2015.jpg" height="auto" width="600"/></a>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a name="toc_item_8" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_8"></a>
+              <div class="imgContainer" style="background: #222222; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2403&amp;cerid=0&amp;cdt=7%2f30%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/WorldQuest2015.jpg" height="auto" width="600" style="border-bottom-color: #111111; border-bottom-style: solid; border-width: 0 0 3px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 600px" /></a>
               </div>
             </td>
           </tr>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full">
-              <h2>La Belle Provence</h2>
-              <p>Bonjour, mon amis, we have arrived at a beautiful destination, La Belle Provence, the theme for our evening of “les fun” and “les smarts.” Oui, real French may be on the exam. Set aside <a href='https://www.dfwworld.org/Events?cid=5&ceid=2403&cerid=0&cdt=7%2f30%2f2015' target='_blank'>6 PM to 8 PM on Thursday, July 30, for our annual members-only WorldQuest trivia challenge</a>.<br/><br/>To quote Ren&eacute; Descartes, "It is not enough to have a good mind; the main thing is to use it well."<br/><br/>You will have an occasion to use your mind well at this annual WorldQuest &mdash; and dress the part, too. Honor your favorite French character or designer with a special costume for the event at the Rosewood Crescent, our traditional WorldQuest sponsor. Individuals pay $15 to be placed on a team of four, but form your own team of four and it will cost just $40 and save some francs, er, euros. Enjoy food and drink and a wonderfully competitive evening.<br/><br/>Questions are drawn from current affairs, history and various elements of global life. Should you struggle with an answer, remember that Voltaire said, "Judge a man by his questions rather than his answers."<br/><br/>
-              </p>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">LA BELLE PROVENCE</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Bonjour, mon amis, we have arrived at a beautiful destination, La Belle Provence, the theme for our evening of “les fun” and “les smarts.” Oui, real French may be on the exam. Set aside <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2403&amp;cerid=0&amp;cdt=7%2f30%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">6 PM to 8 PM on Thursday, July 30, for our annual members-only WorldQuest trivia challenge</a>.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">To quote René Descartes, "It is not enough to have a good mind; the main thing is to use it well."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">You will have an occasion to use your mind well at this annual WorldQuest — and dress the part, too. Honor your favorite French character or designer with a special costume for the event at the Rosewood Crescent, our traditional WorldQuest sponsor. Individuals pay $15 to be placed on a team of four, but form your own team of four and it will cost just $40 and save some francs, er, euros. Enjoy food and drink and a wonderfully competitive evening.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Questions are drawn from current affairs, history and various elements of global life. Should you struggle with an answer, remember that Voltaire said, "Judge a man by his questions rather than his answers."</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td valign="top" width="600" align="right" class="right">
-              <table style="float: right; margin: 0 0 15px 15px" width="240" align="right">
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" width="600" align="right" class="right" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table style="border-collapse: collapse; float: right; line-height: 150%; margin: 0 0 15px 15px; mso-line-height-rule: exactly; padding: 0" width="240" align="right">
                 <tbody>
-                  <tr>
-                    <td class="imageContainer"><a href="https://www.dfwworld.org/IEP/Teachers/IEOY" target="_blank"><img label="image" src="image/IEOY2015_Winners.jpg" height="auto" width="240" align="right"/></a>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="imageContainer" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/IEP/Teachers/IEOY" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/IEOY2015_Winners.jpg" height="auto" width="240" align="right" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="caption">
-                      <p>Juliann Warner, luncheon speaker Malcolm Gladwell and Rhonda Pugh</p>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="caption" style="background: #222222; border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px; vertical-align: middle" bgcolor="#222222" valign="middle">
+                      <p style="color: #FFFFFF; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">Juliann Warner, luncheon speaker Malcolm Gladwell and Rhonda Pugh</p>
                     </td>
                   </tr>
                 </tbody>
-              </table><a name="toc_item_8"></a>
-              <h2>THE GLOBAL JWAC EFFECT</h2>
-              <p>Our 2015 International Educators of the Year were Juliann Warner and Rhonda Pugh, the Arlington Martin teachers who created the first Junior World Affairs Council, an idea that has spread through public, private, charter and home schools across North Texas. What has that idea meant to students? It has meant the world:<br/><br/>Call this an illuminating humanitarian effort by Southlake Carroll's JWAC. President Samira Mehta reports that goal was to raise $1,000. Half would buy solar lamps so youngsters in India can study at night in villages that have no electricity. The rest would go for scholarships for orphans. The JWAC raised $300 in the first 3 days of fundraising, an immediate good sign. Gleeful Samira reports the JWAC "far exceeded our goal!" The JWAC members raised more than $2,000. "We should be able to provide four scholarships to orphans studying at Sumangali Seva Ashrama and distribute around 200 solar lamps to villages in India without electricity. We are so glad to be making such a difference! We can't wait to see what we will do with our next service project!"<br/><br/>Arlington Martin JWAC Co-President Kyle Desrosiers won a scholarship from the National Security Language Initiative for Youth and will spend seven weeks in Ankara, Turkey, this summer “where I will study the language at a local university and participate in cultural and community events. ... I am very grateful to WAC for not only putting on the career day, which led me to hear of awesome and life changing opportunities, such as this one, but also for providing interesting forums and events that encourage global learning and have helped strengthen and fuel my passion for global affairs and culture.”<br/><br/>[REMINDER:  The fall semester is on its way! Encourage your students to get involved with a JWAC on their campuses &mdash; or to start a JWAC with the help of the Council and a teacher. The Council is a great place for all to learn about the world. Join the conversation and see the world better.]<br/><br/>
-              </p>
+              </table><a name="toc_item_9" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_9"></a>
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">THE GLOBAL JWAC EFFECT</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Our 2015 International Educators of the Year were Juliann Warner and Rhonda Pugh, the Arlington Martin teachers who created the first Junior World Affairs Council, an idea that has spread through public, private, charter and home schools across North Texas. What has that idea meant to students? It has meant the world:</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Call this an illuminating humanitarian effort by Southlake Carroll's JWAC. President Samira Mehta reports that goal was to raise $1,000. Half would buy solar lamps so youngsters in India can study at night in villages that have no electricity. The rest would go for scholarships for orphans. The JWAC raised $300 in the first 3 days of fundraising, an immediate good sign. Gleeful Samira reports the JWAC "far exceeded our goal!" The JWAC members raised more than $2,000. "We should be able to provide four scholarships to orphans studying at Sumangali Seva Ashrama and distribute around 200 solar lamps to villages in India without electricity. We are so glad to be making such a difference! We can't wait to see what we will do with our next service project!"</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Arlington Martin JWAC Co-President Kyle Desrosiers won a scholarship from the National Security Language Initiative for Youth and will spend seven weeks in Ankara, Turkey, this summer “where I will study the language at a local university and participate in cultural and community events. ... I am very grateful to WAC for not only putting on the career day, which led me to hear of awesome and life changing opportunities, such as this one, but also for providing interesting forums and events that encourage global learning and have helped strengthen and fuel my passion for global affairs and culture.”</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full"><a name="toc_item_9"></a>
-              <div class="imgContainer"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2394&amp;cerid=0&amp;cdt=7%2f1%2f2015" target="_blank"><img label="image" src="https://www.dfwworld.org/image/SH_DalaiLama.jpg" height="auto" width="600"/></a>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a name="toc_item_10" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_10"></a>
+              <div class="imgContainer" style="background: #222222; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2394&amp;cerid=0&amp;cdt=7%2f1%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_DalaiLamaQuote.jpg" height="auto" width="600" style="border-bottom-color: #111111; border-bottom-style: solid; border-width: 0 0 3px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none; width: 600px" /></a>
               </div>
             </td>
           </tr>
-          <tr bgcolor="#222222" class="main-content">
-            <td class="caption">
-              <p>A Conversation with His Holiness the 14th Dalai Lama</p>
-            </td>
-          </tr>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td width="600" class="full">
-              <h2>DALAI LAMA RETURNS TO DALLAS</h2>
-              <p>“If you think you are too small to make a difference, try sleeping with a mosquito." &mdash; Dalai Lama XIV<br/><br/>Nobel laureate and spiritual leader the Dalai Lama will be at Moody Coliseum at SMU on Wednesday, July 1. The program, “A Conversation with His Holiness the 14th Dalai Lama,” is presented by SMU and the George W. Bush Presidential Center in conjunction with the World Affairs Council of Dallas/Fort Worth.<br/><br/>The event begins at 1:30 PM in Moody. Tickets range from $25 to $125 at <a href='http://www.ticketmaster.com/a-conversation-with-his-holiness-the-dallas-texas-07-01-2015/event/0C004EAD84F21927?artistid=714781&majorcatid=10005&minorcatid=104' target='_blank'>ticketmaster.com</a>.  (Coincidentally, the Dalai Lama and President George W. Bush celebrate their birthdays on July 6 &mdash; the Dalai Lama born in 1935, President Bush in 1946.)<br/><br/>
-              </p>
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td width="600" class="full" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">DALAI LAMA RETURNS TO DALLAS</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Nobel laureate and spiritual leader the Dalai Lama will be at Moody Coliseum at SMU on Wednesday, July 1. The program, “A Conversation with His Holiness the 14th Dalai Lama,” is presented by SMU and the George W. Bush Presidential Center in conjunction with the World Affairs Council of Dallas/Fort Worth.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">The event begins at 1:30 PM in Moody. Tickets range from $25 to $125 at <a href="http://www.ticketmaster.com/a-conversation-with-his-holiness-the-dallas-texas-07-01-2015/event/0C004EAD84F21927?artistid=714781&amp;majorcatid=10005&amp;minorcatid=104" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">ticketmaster.com</a>.  (Coincidentally, the Dalai Lama and President George W. Bush celebrate their birthdays on July 6 — the Dalai Lama born in 1935, President Bush in 1946.)</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr bgcolor="#E6E7E4" class="main-content">
-            <td valign="top" width="600" align="left" class="left">
-              <table style="float: left; margin: 0 15px 15px 0" width="240" align="left">
+          <tr bgcolor="#E6E7E4" class="main-content" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td valign="top" width="600" align="left" class="left" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+              <table style="border-collapse: collapse; float: left; line-height: 150%; margin: 0 15px 15px 0; mso-line-height-rule: exactly; padding: 0" width="240" align="left">
                 <tbody>
-                  <tr>
-                    <td class="imageContainer"><a href="https://www.dfwworld.org/Events" target="_blank"><img label="image" src="/image/EC_mrSurpriseAndTheCouncilMember.jpg" height="auto" width="240" align="left"/></a>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="imageContainer" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img label="image" src="https://www.dfwworld.org/image/EC_mrSurpriseAndTheCouncilMember.jpg" height="auto" width="240" align="left" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="caption">
-                      <p>Patrick Esquerr&eacute;,<br />Founder of La Madeleine</p>
+                  <tr style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td class="caption" style="background: #222222; border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 5px; vertical-align: middle" bgcolor="#222222" valign="middle">
+                      <p style="color: #FFFFFF; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px; mso-line-height-rule: exactly; padding: 0; text-align: center" align="center">Patrick Esquerré,<br />Founder of La Madeleine</p>
                     </td>
                   </tr>
                 </tbody>
-              </table><a name="toc_item_10"></a>
-              <h2>MR. SURPRISE AND THE COUNCIL MEMBER</h2>
-              <p>World Affairs Council member Patrick Esquerr&eacute; created a household name with the help of Napoleon and Dallas women: La Madeleine.<br/><br/>Patrick explains that he was searching for a proper theme for a Dallas restaurant when a friend introduced him to "Mr. Surprise" who told him, "If it is an authentic French country bakery near Southern Methodist University, it will be a winner."<br/><br/>"Mr. Surprise" was merchandising legend Stanley Marcus of Neiman-Marcus and his advice "became my business plan," Patrick says. (FYI: Mr. Stanley, as he was known around town, was a founder of the World Affairs Council.)<br/><br/>We asked Patrick some questions. As they say at La Mad, "Enjoy."<br/><br/><strong>Favorite La Madeleine dish?</strong> "Depends on the time of the day, the day of the week and the company." Among his faves are the balsamic chicken, wild field salad and the strawberry Napoleon. He has more, of course.<br/><br/><strong>Finding the name?</strong> That "may be the most challenging decision. Napoleon came to my rescue. La Madeleine is the name of the La Madeleine church in Paris that had been built by Napoleon" Also, he cites Marcel Proust's Remembrance of Things Past use of "little Madeleine cakes" and the story of "a little girl in Paris called Madeline. She was small, but her heart was big and everyone loves her." He also credits deciding that his chief advisors in the development of La Madeleine would be women and, he says admiringly that "my Dallas women" became the "architects, designers, consultants." He describes listening to them rather than the male-dominated industry as a "brilliant decision."<br/><br/><strong>Where did you spend your childhood?</strong> "At Les Pins, a wonderful farm in the Chateau Country, in the Loire Vallee, and in Tours before moving to Paris,"<br/><br/><strong>Why did you come to Dallas?</strong> In 1980, an Oklahoma businessman was looking for a way to promote the Midwest in Europe and a mutual friend connected them. After a number of ideas didn't pass muster, the concept of bringing a French country bakery to the "food map of Dallas" was the winner.<br/><br/><strong>What drew you to the Council?</strong> "Very interesting group of people and events (and Arlette!)." (Longtime Council member Arlette Douffiagues-Galland.)<br/><br/><strong>Favorite Council speaker?</strong> Condoleezza Rice.<br/><br/><strong>Favorite travel destination?</strong> "I have been going back to France every other month since my first visit to Dallas. Need to breathe the fresh air on both sides of the ocean."<br/><br/><strong>Place you'd like to visit again?</strong> "The Nile in Egypt, Mafia Island in Tanzania and many others."<br/><br/><strong>And you'd still like to go to?</strong> "Burma, St. Petersburg."<br/><br/><strong>Favorite Texas tastes?</strong> "My dear friend Stephan Pyles’ great cuisine."<br/><br/><strong>What is your best Council selling point?</strong> "Great people and good energy."<br/><br/>
-              </p>
+              </table><a name="toc_item_11" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none" id="toc_item_11"></a>
+              <h2 style="font-size: 21px; line-height: 34px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">MR. SURPRISE AND THE COUNCIL MEMBER</h2>
+              <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">World Affairs Council member Patrick Esquerré created a household name with the help of Napoleon and Dallas women: La Madeleine.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">Patrick explains that he was searching for a proper theme for a Dallas restaurant when a friend introduced him to "Mr. Surprise" who told him, "If it is an authentic French country bakery near Southern Methodist University, it will be a winner."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">"Mr. Surprise" was merchandising legend Stanley Marcus of Neiman-Marcus and his advice "became my business plan," Patrick says. (FYI: Mr. Stanley, as he was known around town, was a founder of the World Affairs Council.)</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left">We asked Patrick some questions. As they say at La Mad, "Enjoy."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Favorite La Madeleine dish?</strong> "Depends on the time of the day, the day of the week and the company." Among his faves are the balsamic chicken, wild field salad and the strawberry Napoleon. He has more, of course.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Finding the name?</strong> That "may be the most challenging decision. Napoleon came to my rescue. La Madeleine is the name of the La Madeleine church in Paris that had been built by Napoleon" Also, he cites Marcel Proust's Remembrance of Things Past use of "little Madeleine cakes" and the story of "a little girl in Paris called Madeline. She was small, but her heart was big and everyone loves her." He also credits deciding that his chief advisors in the development of La Madeleine would be women and, he says admiringly that "my Dallas women" became the "architects, designers, consultants." He describes listening to them rather than the male-dominated industry as a "brilliant decision."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Where did you spend your childhood?</strong> "At Les Pins, a wonderful farm in the Chateau Country, in the Loire Vallee, and in Tours before moving to Paris,"</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Why did you come to Dallas?</strong> In 1980, an Oklahoma businessman was looking for a way to promote the Midwest in Europe and a mutual friend connected them. After a number of ideas didn't pass muster, the concept of bringing a French country bakery to the "food map of Dallas" was the winner.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>What drew you to the Council?</strong> "Very interesting group of people and events (and Arlette!)." (Longtime Council member Arlette Douffiagues-Galland.)</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Favorite Council speaker?</strong> Condoleezza Rice.</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Favorite travel destination?</strong> "I have been going back to France every other month since my first visit to Dallas. Need to breathe the fresh air on both sides of the ocean."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Place you'd like to visit again?</strong> "The Nile in Egypt, Mafia Island in Tanzania and many others."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>And you'd still like to go to?</strong> "Burma, St. Petersburg."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>Favorite Texas tastes?</strong> "My dear friend Stephan Pyles’ great cuisine."</p>
+                <p style="color: #404040; font-family: Helvetica, sans-serif; font-size: 13px; line-height: 21px; margin: 8px 21px 3px; mso-line-height-rule: exactly; padding: 0; text-align: left" align="left"><strong>What is your best Council selling point?</strong> "Great people and good energy."</p>
+
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table id="upcoming" align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table id="upcoming" align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; width: 600px">
         <tbody>
-          <tr style="height: 300px; margin: 0; padding: 0;" class="main-container upcoming">
-            <td valign="top" align="center" width="180" height="auto" bgcolor="#f8f8f8" style="margin: auto; padding: 2px; text-align: center;"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2352&amp;cerid=0&amp;cdt=6%2f2%2f2015" target="_blank"><img alt="Charles Murray" src="https://www.dfwworld.org/image/BC_ByThePeople.jpg" align="center" border="0" height="{height}" width="120"/></a>
-              <div style="margin: 0; padding: 0;">
-                <p align="center"><span class="date">6/2 at Noon</span>
+          <tr style="height: 300px; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0" class="main-container upcoming">
+            <td valign="top" align="center" width="180" height="auto" bgcolor="#f8f8f8" style="border-collapse: collapse; height: 300px; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 2px; text-align: center; width: 120px"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2352&amp;cerid=0&amp;cdt=6%2f2%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img alt="Charles Murray" src="https://www.dfwworld.org/image/BC_ByThePeople.jpg" align="center" border="0" height="{height}" width="120" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
+              <div style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                <p align="center" style="color: #333333; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 21px; margin: 1em; mso-line-height-rule: exactly; padding: 0"><span class="date" style="display: block">6/2 at Noon</span>
                 </p>
-                <h2 align="center">Charles Murray</h2>
-                <h3 align="center"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2352&amp;cerid=0&amp;cdt=6%2f2%2f2015" target="_blank">By The People: Rebuilding Liberty Without Permission</a></h3><br/>
+                <h2 align="center" style="font-size: 21px; line-height: 34px; margin: 0; mso-line-height-rule: exactly; padding: 0">Charles Murray</h2>
+                <h3 align="center" style="line-height: 125%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2352&amp;cerid=0&amp;cdt=6%2f2%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">By The People: Rebuilding Liberty Without Permission</a></h3><br />
               </div>
             </td>
-            <td valign="top" align="center" width="180" height="auto" bgcolor="#f8f8f8" style="margin: auto; padding: 2px; text-align: center;"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2354&amp;cerid=0&amp;cdt=6%2f10%2f2015" target="_blank"><img alt="International Perspectives Series" src="https://www.dfwworld.org/image/BC_FionaHillMrPutin.jpg" align="center" border="0" height="{height}" width="120"/></a>
-              <div style="margin: 0; padding: 0;">
-                <p align="center"><span class="date">6/10 at Noon</span>
+            <td valign="top" align="center" width="180" height="auto" bgcolor="#f8f8f8" style="border-collapse: collapse; height: 300px; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 2px; text-align: center; width: 120px"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2354&amp;cerid=0&amp;cdt=6%2f10%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img alt="International Perspectives Series" src="https://www.dfwworld.org/image/BC_FionaHillMrPutin.jpg" align="center" border="0" height="{height}" width="120" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
+              <div style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                <p align="center" style="color: #333333; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 21px; margin: 1em; mso-line-height-rule: exactly; padding: 0"><span class="date" style="display: block">6/10 at Noon</span>
                 </p>
-                <h2 align="center">International Perspectives Series</h2>
-                <h3 align="center"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2354&amp;cerid=0&amp;cdt=6%2f10%2f2015" target="_blank">Fiona Hill - How Should We Deal With Putin’s Russia?</a></h3><br/>
+                <h2 align="center" style="font-size: 21px; line-height: 34px; margin: 0; mso-line-height-rule: exactly; padding: 0">International Perspectives Series</h2>
+                <h3 align="center" style="line-height: 125%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2354&amp;cerid=0&amp;cdt=6%2f10%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Fiona Hill - How Should We Deal With Putin’s Russia?</a></h3><br />
               </div>
             </td>
-            <td valign="top" align="center" width="180" height="auto" bgcolor="#f8f8f8" style="margin: auto; padding: 2px; text-align: center;"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank"><img alt="H.W. Brands" src="https://www.dfwworld.org/image/BC_ReaganTheLife.jpg" align="center" border="0" height="{height}" width="120"/></a>
-              <div style="margin: 0; padding: 0;">
-                <p align="center"><span class="date">6/23 at 11:30 AM in&nbsp;<a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank">Fort Worth</a><br/>6/23 at 6:30 PM in&nbsp;<a href="t" target="_blank">Addison</a></span>
+            <td valign="top" align="center" width="180" height="auto" bgcolor="#f8f8f8" style="border-collapse: collapse; height: 300px; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 2px; text-align: center; width: 120px"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img alt="H.W. Brands" src="https://www.dfwworld.org/image/BC_ReaganTheLife.jpg" align="center" border="0" height="{height}" width="120" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a>
+              <div style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                <p align="center" style="color: #333333; font-family: Helvetica, sans-serif; font-size: 14px; line-height: 21px; margin: 1em; mso-line-height-rule: exactly; padding: 0"><span class="date" style="display: block">6/23 at 11:30 AM in <a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Fort Worth</a><br />6/23 at 6:30 PM in <a href="https://www.dfwworld.org/t" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Addison</a></span>
                 </p>
-                <h2 align="center">H.W. Brands</h2>
-                <h3 align="center"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank">Reagan: The Life</a></h3><br/>
+                <h2 align="center" style="font-size: 21px; line-height: 34px; margin: 0; mso-line-height-rule: exactly; padding: 0">H.W. Brands</h2>
+                <h3 align="center" style="line-height: 125%; margin: 0; mso-line-height-rule: exactly; padding: 0"><a href="https://www.dfwworld.org/Events?cid=5&amp;ceid=2286&amp;cerid=0&amp;cdt=6%2f23%2f2015" target="_blank" style="color: #083A81; font-weight: bold; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Reagan: The Life</a></h3><br />
               </div>
             </td>
           </tr>
         </tbody>
       </table>
-      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr height="10px">
-            <td>&nbsp;</td>
+          <tr height="10px" style="line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+            <td style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0"> </td>
           </tr>
         </tbody>
       </table>
-      <table id="footer" align="center" cellpadding="0" cellspacing="0" width="600" class="container-table">
+      <table id="footer" align="center" cellpadding="0" cellspacing="0" width="600" class="container-table" style="border-collapse: collapse; height: auto; line-height: 150%; margin: 0 auto; mso-line-height-rule: exactly; padding: 0; width: 600px">
         <tbody>
-          <tr class="top-links">
-            <td align="center" valign="top" width="330" height="40" class="help">
-              <table border="0" cellpadding="0" cellspacing="0" width="330">
+          <tr class="top-links" style="height: 40px; line-height: 150%; margin: 10px auto; mso-line-height-rule: exactly; padding: 0">
+            <td align="center" valign="top" width="330" height="40" class="help" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle; width: 360px">
+              <table border="0" cellpadding="0" cellspacing="0" width="330" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
                 <tbody>
-                  <tr style="border-collapse: collapse;">
-                    <td style="border-collapse: collapse;"><a href="https://www.dfwworld.org/media-archive/eConnection/2015/May">View in Browser</a></td>
-                    <td style="border-collapse: collapse;">&nbsp;|&nbsp;</td>
-                    <td style="border-collapse: collapse;"><a href="target=&amp;pid=1496&amp;did=0&amp;tab=0">Privacy Policy</a></td>
-                    <td style="border-collapse: collapse;">&nbsp;|&nbsp;</td>
-                    <td style="border-collapse: collapse;"><a href="target=&amp;pid=1497&amp;did=0&amp;tab=0">Unsubscribe</a></td>
+                  <tr style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"><a href="https://www.dfwworld.org/media-archive/eConnection/2015/May" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">View in Browser</a></td>
+                    <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"> | </td>
+                    <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"><a href="https://www.dfwworld.org/target=&amp;pid=1496&amp;did=0&amp;tab=0" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Privacy Policy</a></td>
+                    <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"> | </td>
+                    <td style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle" align="center" valign="middle"><a href="https://www.dfwworld.org/target=&amp;pid=1497&amp;did=0&amp;tab=0" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Unsubscribe</a></td>
                   </tr>
                 </tbody>
               </table>
             </td>
-            <td align="center" valign="top" width="30" height="40" class="spacer">&nbsp;</td>
-            <td align="right" valign="top" width="240" class="share">
-              <table border="0" cellpadding="0" cellspacing="0" height="40">
+            <td align="center" valign="top" width="30" height="40" class="spacer" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"> </td>
+            <td align="right" valign="top" width="240" class="share" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle; width: 240px">
+              <table border="0" cellpadding="0" cellspacing="0" height="40" style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
                 <tbody>
-                  <tr style="border-collapse: collapse;">
-                    <td valign="top" align="center" width="25" height="25" class="icon-container"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank"><img src="http://www.dfwworld.org/image/facebook_icon_blue_round.gif" alt="Facebook icon" border="0" height="25" width="25"/></a></td>
-                    <td valign="top" align="left" width="40" height="25" class="text"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank">Like</a></td>
-                    <td valign="top" align="center" width="25" height="25" class="icon-container"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank"><img src="http://www.dfwworld.org/image/twitter_icon_blue_round.gif" alt="Twitter icon" border="0" height="25" width="25"/></a></td>
-                    <td valign="top" align="left" width="50" height="25" class="text"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank">Tweet</a></td>
-                    <td valign="top" align="center" width="25" height="25" class="icon-container"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank"><img src="http://www.dfwworld.org/image/email_icon_blue_round.gif" alt="Forward icon" border="0" height="25" width="25"/></a></td>
-                    <td valign="top" align="left" width="75" height="25" class="text"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank">Forward</a></td>
+                  <tr style="border-collapse: collapse; line-height: 150%; margin: 0; mso-line-height-rule: exactly; padding: 0">
+                    <td valign="top" align="center" width="25" height="25" class="icon-container" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/facebook_icon_blue_round.gif" alt="Facebook icon" border="0" height="25" width="25" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                    <td valign="top" align="left" width="40" height="25" class="text" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0 0 0 3px; text-align: left; vertical-align: middle"><a cs_likeurl="#" href="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" likeurl="https://www.dfwworld.org/media-archive/eConnection/2015/May#FB-Like" rel="cs_facebox" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Like</a></td>
+                    <td valign="top" align="center" width="25" height="25" class="icon-container" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/twitter_icon_blue_round.gif" alt="Twitter icon" border="0" height="25" width="25" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                    <td valign="top" align="left" width="50" height="25" class="text" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0 0 0 3px; text-align: left; vertical-align: middle"><a href="http://twitter.com/intent/tweet?url=https://www.dfwworld.org/media-archive/eConnection/2015/May&amp;text=Join the conversation! See what the Council has been doing =&gt; &amp;via=dfwworld&amp;related=dfwworld" target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Tweet</a></td>
+                    <td valign="top" align="center" width="25" height="25" class="icon-container" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0; text-align: center; vertical-align: middle"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none"><img src="http://www.dfwworld.org/image/email_icon_blue_round.gif" alt="Forward icon" border="0" height="25" width="25" style="border: 0; line-height: 150%; margin: 0; mso-line-height-rule: exactly; outline: none; padding: 0; text-decoration: none" /></a></td>
+                    <td valign="top" align="left" width="75" height="25" class="text" style="border-collapse: collapse; line-height: 150%; margin: auto; mso-line-height-rule: exactly; padding: 0 0 0 3px; text-align: left; vertical-align: middle"><a href="mailto:?subject=FW: World Affairs Council of Dallas Fort Worth - eConection May 2015&amp;body=Join the conversation! See what the Council has been doing =&gt; https://www.dfwworld.org/media-archive/eConnection/2015/May." target="_blank" style="color: #083A81; font-size: 10px; font-weight: bold; height: 25px; line-height: 25px; margin: 0; mso-line-height-rule: exactly; padding: 0; text-decoration: none">Forward</a></td>
                   </tr>
                 </tbody>
               </table>
